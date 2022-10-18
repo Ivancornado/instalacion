@@ -1,4 +1,4 @@
-# Instalacion Ubuntu
+# 1 Instalacion Ubuntu
 
 En este exercicio ecplicaremos a instalación de ubuntu paso a paso. Para iso necesitaremos unha imaxe de dito sistema operativo.
 
@@ -50,7 +50,7 @@ A instalación está completa e Ubuntu presentanos todas as funcionalidades do s
 
 Por ultimo presentanos a pantalla de inicio e a instalación estaría completada.
 
-# Actualizacion do sistema
+# 2 Actualizacion do sistema
 
 ![Primeira captura de actualización](./capturas%20ubuntu/actualizar%20sistema%201.PNG)
 
