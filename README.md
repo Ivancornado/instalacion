@@ -68,6 +68,8 @@ Por ultimo Usaremos este comado para finalizar a actualización.
 
 ![Primera captura de actualización un paso](./capturas%20ubuntu/actualizacion%20sistema%20en%20un%20paso.PNG)
 
+Para actualizar en un paso usaremos os comandos anteriores separados por *;*
+
 ```sudo apt update; sudo apt upgrade```
 
 
