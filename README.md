@@ -28,3 +28,6 @@ Elexiremos a zona que nos corresponda.
 
 ![Septima captura de la instalación](./capturas%20ubuntu/Captura7.PNG)
 
+Completaremos os campos cos datos que precisemos (Contraseña recomendada en equipos de uso ocasional **"abc123."**).
+
+![Septima captura de la instalación](./capturas%20ubuntu/Captura8.PNG)
