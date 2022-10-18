@@ -44,3 +44,7 @@ Como a unidade coa imaxe de ubuntu estaba ainda insertada salta esta mensaxe, pr
 
 ![Onceava captura de la instalación](./capturas%20ubuntu/Captura11.PNG)
 
+A instalación está completa e Ubuntu presentanos todas as funcionalidades do sistema, eu omitireinas.
+
+![Doceava captura de la instalación](./capturas%20ubuntu/Captura12.PNG)
+
