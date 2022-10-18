@@ -20,3 +20,4 @@ Seleccionaremos a opción de borrar o disco e instalar ubuntu para que elimine o
 
 ![Quinta captura de la instalación](./capturas%20ubuntu/Captura5.PNG)
 
+Indicaranos os cambios que fará no disco.
