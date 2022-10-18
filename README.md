@@ -57,3 +57,9 @@ Por ultimo presentanos a pantalla de inicio e a instalación estaría completada
 Para actualizar o sistema por comandos usaremos o comando que se ve na imaxe.
 
 ```sudo apt update```
+
+![Segunda captura de actualización](./capturas%20ubuntu/actualizacion%20sistema%202.PNG)
+
+Por ultimo Usaremos este comado para finalizar a actualización.
+
+```sudo apt upgrade```
