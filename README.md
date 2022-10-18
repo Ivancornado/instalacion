@@ -24,3 +24,7 @@ Indicaranos os cambios que fará no disco.
 
 ![Sexta captura de la instalación](./capturas%20ubuntu/Captura6.PNG)
 
+Elexiremos a zona que nos corresponda.
+
+![Septima captura de la instalación](./capturas%20ubuntu/Captura7.PNG)
+
