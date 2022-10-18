@@ -72,5 +72,11 @@ Para actualizar en un paso usaremos os comandos anteriores separados por **;**
 
 ```sudo apt update; sudo apt upgrade```
 
+# 3.0 Instalación Curl
 
+# 4.0 Instalación Fish
+
+# 5.0 Instalación Fisher
+
+# 6.0 Instalación Pure (Plungin fish)
 
