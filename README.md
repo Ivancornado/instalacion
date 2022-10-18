@@ -13,3 +13,5 @@ Ahora indicaremoslle ao sistema que configuración de teclado precisamos (Como s
 ![Tercera captura de la instalación](./capturas%20ubuntu/Captura3.PNG)
 
 Ahora indicaremos que tipo de instalación precisamos "Instalación normal" (para dispoñer de todas as funcionalidades do sistema) e "Descargar actualizaciones" (para que o sistema esté na última versión e aforrar ese pasto posteriormente)
+
+![Cuarta captura de la instalación](./capturas%20ubuntu/Captura4.PNG)
