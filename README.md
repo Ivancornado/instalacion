@@ -50,6 +50,8 @@ A instalación está completa e Ubuntu presentanos todas as funcionalidades do s
 
 Por ultimo presentanos a pantalla de inicio e a instalación estaría completada.
 
+# Actualizacion do sistema
+
 ![Primeira captura de actualización](./capturas%20ubuntu/actualizar%20sistema%201.PNG)
 
 Para actualizar o sistema por comandos usaremos o comando que se ve na imaxe.
