@@ -9,3 +9,6 @@ En esta imaxe podemos ver que nos ofrece "Instalar ubuntu" e "Probar ubuntu" ade
 ![Segunda captura de la instalacion](./capturas%20ubuntu/Captura2.PNG)
 
 Ahora indicaremoslle ao sistema que configuración de teclado precisamos (Como sabedes en algún linguaxes teremos caracteres distintos, o caso máis cercano a nos sería a ausencia do **Ñ** na lingua inglesa)
+
+![Tercera captura de la instalación](./capturas%20ubuntu/Captura3.PNG)
+
