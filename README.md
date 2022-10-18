@@ -40,3 +40,7 @@ Aceptaremos para que o equipo se reinicie.
 
 ![Decima captura de la instalación](./capturas%20ubuntu/Captura10.PNG)
 
+Como a unidade coa imaxe de ubuntu estaba ainda insertada salta esta mensaxe, prememos intro e o equipo explusara automaticamente
+
+![Onceava captura de la instalación](./capturas%20ubuntu/Captura11.PNG)
+
