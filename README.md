@@ -1,11 +1,12 @@
-# **Indice**
-## 1.0 Instalación ubuntu
-## 2.0 Actualización do sistema
-## 3.0 Instalación Curl
-## 4.0 Instalación Fish
-## 5.0 Instalación Fisher
-## 6.0 Instalación Pure (Plungin fish)
+## Indice
 
+- [1.0 Instalacion Ubuntu](#10-instalacion-ubuntu)
+- [2.0 Actualizacion do sistema](#20-actualizacion-do-sistema)
+  - [2.1 Actualización de Ubuntu en un paso](#21-actualización-de-ubuntu-en-un-paso)
+- [3.0 Instalación cURL](#30-instalación-curl)
+- [4.0 Instalación Fish](#40-instalación-fish)
+- [5.0 Instalación Fisher](#50-instalación-fisher)
+- [6.0 Instalación Pure (Plungin fish)](#60-instalación-pure-plungin-fish)
 
 # 1.0 Instalacion Ubuntu
 
