@@ -62,9 +62,9 @@ Para actualizar o sistema por comandos usaremos o comando que se ve na imaxe.
 
 Por ultimo Usaremos este comado para finalizar a actualización.
 
-~~~
+```
 sudo apt upgrade
-~~~
+```
 
 ## 2.1 Actualización de Ubuntu en un paso
 
