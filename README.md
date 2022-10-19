@@ -1,3 +1,12 @@
+# **Indice**
+## 1.0 Instalación ubuntu
+## 2.0 Actualización do sistema
+## 3.0 Instalación Curl
+## 4.0 Instalación Fish
+## 5.0 Instalación Fisher
+## 6.0 Instalación Pure (Plungin fish)
+
+
 # 1.0 Instalacion Ubuntu
 
 En este exercicio ecplicaremos a instalación de ubuntu paso a paso. Para iso necesitaremos unha imaxe de dito sistema operativo.
@@ -56,7 +65,9 @@ Por ultimo presentanos a pantalla de inicio e a instalación estaría completada
 
 Para actualizar o sistema por comandos usaremos o comando que se ve na imaxe.
 
-```sudo apt update```
+```
+sudo apt update
+```
 
 ![Segunda captura de actualización](./capturas%20ubuntu/actualizacion%20sistema%202.PNG)
 
@@ -72,9 +83,15 @@ sudo apt upgrade
 
 Para actualizar en un paso usaremos os comandos anteriores separados por **;**
 
-```sudo apt update; sudo apt upgrade```
+```
+sudo apt update; sudo apt upgrade
+```
 
-# 3.0 Instalación Curl
+# 3.0 Instalación cURL
+Ahora instalaremos cURL, cURL é unha ferramenta de liña de comandos e bibliotecas coa cal é posible transferir datos a través duna URL con diversas opcions de seguridade.
+
+![Primera captura curl](./capturas%20ubuntu/instalacion%20curl.PNG)
+
 
 # 4.0 Instalación Fish
 
