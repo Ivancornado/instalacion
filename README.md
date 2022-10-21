@@ -112,7 +112,7 @@ Para a instalacion de fisher, un administrador de plugins de fish o cal se encar
 
 ![Instalacion fisher](./capturas%20ubuntu/instalacion%20fisher.PNG)
 
-Usaremos o comando da imaxe:
+Usaremos o comando da imaxe tendo fish iniciado:
 ´´´
 sudo apt install fish
 ´´´
