@@ -119,3 +119,12 @@ sudo apt install fish
 
 # 6.0 Instalación Pure (Plungin fish)
 
+Na instalación de Pure, un plugin que corrixe erros de fish e engade algúns caracteres a mallores.
+
+![Instalacion fisher](./capturas%20ubuntu/instalacion%20pure.PNG)
+
+Para a instalacion usaremos o comando da imaxe con fish iniciado:
+
+```
+fisher install pure-fish/pure
+```
