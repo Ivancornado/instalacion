@@ -96,6 +96,10 @@ Ahora instalaremos cURL, cURL é unha ferramenta de liña de comandos e bibliote
 
 # 4.0 Instalación Fish
 
+![Instalacion fish](./capturas%20ubuntu/fis%20install.PNG)
+
+Instalaremos cURL, cURL é unha ferramenta de liña de comandos e bibliotecas coa cal é posible transferir datos a través dunha URL con diversas opcións de seguridade.
+
 # 5.0 Instalación Fisher
 
 # 6.0 Instalación Pure (Plungin fish)
