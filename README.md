@@ -11,6 +11,7 @@
   - [7.1 Instalación git](#71-instalación-git)
   - [7.1.1 Confirmacion de que git está instalado](#711-confirmacion-de-que-git-está-instalado)
   - [7.2 Configuración parametrods globales de git](#72-configuración-parametrods-globales-de-git)
+  - [7.3 Engadir e xerar claves ssh a GitHub](#73-engadir-e-xerar-claves-ssh-a-github)
 
 # 1.0 Instalacion Ubuntu
 
@@ -171,3 +172,7 @@ Para iso usaremos
  git config --global core.editor AQUI_VA_TU_EDITOR en mi caso code
  git config --global init.defaultBranch main
 ```
+## 7.3 Engadir e xerar claves ssh a GitHub
+
+Usaremos o comando ```ssh-keygen -t ed25519 -C "EMAIL_USADO_EN_REGISTRO_DE_GITHUB"``` pero para iso iremos ao directorio home con ```cd ~```.
+![septima captura git](./capturas%20git/Captura7.PNG)
