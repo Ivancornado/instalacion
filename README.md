@@ -176,3 +176,21 @@ Para iso usaremos
 
 Usaremos o comando ```ssh-keygen -t ed25519 -C "EMAIL_USADO_EN_REGISTRO_DE_GITHUB"``` pero para iso iremos ao directorio home con ```cd ~```.
 ![septima captura git](./capturas%20git/Captura7.PNG)
+
+Ahora iniciaremos o axente SSH (faremolo obligatoriamente dende bash).
+
+![octava captura git](./capturas%20git/Captura8.PNG)
+
+
+Primeiro debemos obter a clave publica con ```cat .ssh/id_ed25519.pub```.
+
+![cpubli captura git](./capturas%20git/cat.PNG)
+
+Para configurar o SSH modificaremos o directorio .ssh/.config/
+
+![19 captura git](./capturas%20git/clave%20publica.PNG)
+
+Por ultimo creamos a clave ssh en git
+
+![clave ssh git](./capturas%20git/Capturaq.PNG)
+
