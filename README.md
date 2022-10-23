@@ -7,6 +7,7 @@
 - [4.0 Instalación Fish](#40-instalación-fish)
 - [5.0 Instalación Fisher](#50-instalación-fisher)
 - [6.0 Instalación Pure (Plungin fish)](#60-instalación-pure-plungin-fish)
+- [7.0 Preparacion entorno git en Ubuntu](#70-preparacion-entorno-git-en-ubuntu)
 
 # 1.0 Instalacion Ubuntu
 
@@ -127,4 +128,13 @@ Para a instalacion usaremos o comando da imaxe con fish iniciado:
 
 ```
 fisher install pure-fish/pure
+```
+
+# 7.0 Preparacion entorno git en Ubuntu
+
+![primera captura git](./capturas%20git/Captura.PNG)
+
+Crearemos o directorio sobre o cal vamos a traballar e con **pwd** confirmaremos que nos atopamos en dito directorio.
+```
+pwd
 ```
