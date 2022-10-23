@@ -14,6 +14,7 @@
   - [7.3 Engadir e xerar claves ssh a GitHub](#73-engadir-e-xerar-claves-ssh-a-github)
   - [8.0 Copiar repositorios en outro equipo](#80-copiar-repositorios-en-outro-equipo)
   - [9.0 Modificar .gitconfig](#90-modificar-gitconfig)
+  - [10.0 Solución erros](#100-solución-erros)
 
 # 1.0 Instalacion Ubuntu
 
@@ -211,3 +212,21 @@ Ahora importaremos o repositorio con ```git pull (clave ssh do repositorio)```
 Para isto aseguraremonos de estar no home ```~``` , unha vez no home modifivaromos o directorio .config ```nano .gitconfig```
 
 ![.config](./capturas%20git/format.PNG)
+
+## 10.0 Solución erros
+
+Como se pode ver na captura origin estaba mal configurado.
+
+![origin](./capturas%20ubuntu/fallo%20origin%201.PNG)
+
+Por tanto eliminaremos o origin con ``` git remote remove origin```.
+
+![origin2](./capturas%20ubuntu/origin2.PNG)
+
+Comprobamos que se borrou correctamente.
+
+![origin3](./capturas%20ubuntu/origin3.PNG)
+
+Redefinimos origin correctamente.
+
+![origin4](./capturas%20ubuntu/origin4.PNG)
