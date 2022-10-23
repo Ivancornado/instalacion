@@ -12,9 +12,9 @@
   - [7.1.1 Confirmacion de que git está instalado](#711-confirmacion-de-que-git-está-instalado)
   - [7.2 Configuración parametrods globales de git](#72-configuración-parametrods-globales-de-git)
   - [7.3 Engadir e xerar claves ssh a GitHub](#73-engadir-e-xerar-claves-ssh-a-github)
-  - [8.0 Copiar repositorios en outro equipo](#80-copiar-repositorios-en-outro-equipo)
-  - [9.0 Modificar .gitconfig](#90-modificar-gitconfig)
-  - [10.0 Solución erros](#100-solución-erros)
+- [8.0 Copiar repositorios en outro equipo](#80-copiar-repositorios-en-outro-equipo)
+- [9.0 Modificar .gitconfig](#90-modificar-gitconfig)
+- [10.0 Solución erros](#100-solución-erros)
 
 # 1.0 Instalacion Ubuntu
 
@@ -197,7 +197,7 @@ Por ultimo creamos a clave ssh en git
 
 ![clave ssh git](./capturas%20git/Capturaq.PNG)
 
-## 8.0 Copiar repositorios en outro equipo
+# 8.0 Copiar repositorios en outro equipo
 
 Primeiro teremos q copiar os repositorios de git na maquina, iso faremolo con ```git clone (clave ssh do repositorio)```
 
@@ -207,13 +207,13 @@ Ahora importaremos o repositorio con ```git pull (clave ssh do repositorio)```
 
 ![pull](./capturas%20git/Captura%20pull.PNG)
 
-## 9.0 Modificar .gitconfig
+# 9.0 Modificar .gitconfig
 
 Para isto aseguraremonos de estar no home ```~``` , unha vez no home modifivaromos o directorio .config ```nano .gitconfig```
 
 ![.config](./capturas%20git/format.PNG)
 
-## 10.0 Solución erros
+# 10.0 Solución erros
 
 Como se pode ver na captura origin estaba mal configurado.
 
