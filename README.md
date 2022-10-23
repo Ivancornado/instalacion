@@ -9,6 +9,7 @@
 - [6.0 Instalación Pure (Plungin fish)](#60-instalación-pure-plungin-fish)
 - [7.0 Preparacion entorno git en Ubuntu](#70-preparacion-entorno-git-en-ubuntu)
   - [7.1 Instalación git](#71-instalación-git)
+  - [7.1.1 Confirmacion de que git está instalado](#711-confirmacion-de-que-git-está-instalado)
 
 # 1.0 Instalacion Ubuntu
 
@@ -140,11 +141,18 @@ Crearemos o directorio sobre o cal vamos a traballar e con **pwd** confirmaremos
 pwd
 ```
 ## 7.1 Instalación git
-**Ahora faremos a instalación de git, para iso engadiremos o directorio do cal o vamos a descargar tal e como se ve na imaxe.**
+Ahora faremos a instalación de git, para iso engadiremos o directorio do cal o vamos a descargar tal e como se ve na imaxe.
 ![segunda captura git](./capturas%20git/Captura2.PNG)
 
-**Ahora faremos o comando da imaxe para actualizar os repositorios**
+Ahora faremos o comando da imaxe para actualizar os repositorios.
 ![terceira captura git](./capturas%20git/Captura3.PNG)
 
-**Por ultimo instalaremos git co comado da seguinte imaxe**
+Por ultimo instalaremos git co comado da seguinte imaxe.
 ![cuarta captura git](./capturas%20git/Captura4.PNG)
+
+## 7.1.1 Confirmacion de que git está instalado
+
+Ahora co comando ```git version``` confirmaremos que git está instalado tal como vemos nesta imaxe.
+
+![quinta captura git](./capturas%20git/Captura5.PNG)
+
