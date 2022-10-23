@@ -10,6 +10,7 @@
 - [7.0 Preparacion entorno git en Ubuntu](#70-preparacion-entorno-git-en-ubuntu)
   - [7.1 Instalación git](#71-instalación-git)
   - [7.1.1 Confirmacion de que git está instalado](#711-confirmacion-de-que-git-está-instalado)
+  - [7.2 Configuración parametrods globales de git](#72-configuración-parametrods-globales-de-git)
 
 # 1.0 Instalacion Ubuntu
 
@@ -156,3 +157,17 @@ Ahora co comando ```git version``` confirmaremos que git está instalado tal com
 
 ![quinta captura git](./capturas%20git/Captura5.PNG)
 
+## 7.2 Configuración parametrods globales de git
+
+Vamos a configurar nome, email, e defaultBranch.
+
+![sexta captura git](./capturas%20git/Captura6.PNG)
+
+Para iso usaremos
+```
+ cd ~
+ git config --global user.name "AQUI VA TU NOMBRE"
+ git config --global user.email AQUI_VA_TU_EMAIL@WHATEVER.COM
+ git config --global core.editor AQUI_VA_TU_EDITOR en mi caso code
+ git config --global init.defaultBranch main
+```
