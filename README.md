@@ -12,6 +12,7 @@
   - [7.1.1 Confirmacion de que git está instalado](#711-confirmacion-de-que-git-está-instalado)
   - [7.2 Configuración parametrods globales de git](#72-configuración-parametrods-globales-de-git)
   - [7.3 Engadir e xerar claves ssh a GitHub](#73-engadir-e-xerar-claves-ssh-a-github)
+  - [8.0 Copiar repositorios en outro equipo](#80-copiar-repositorios-en-outro-equipo)
 
 # 1.0 Instalacion Ubuntu
 
@@ -194,3 +195,12 @@ Por ultimo creamos a clave ssh en git
 
 ![clave ssh git](./capturas%20git/Capturaq.PNG)
 
+## 8.0 Copiar repositorios en outro equipo
+
+Primeiro teremos q copiar os repositorios de git na maquina, iso faremolo con ```git clone (clave ssh do repositorio)```
+
+![clone](./capturas%20git/Captura%20clone.PNG)
+
+Ahora importarimos o repositorio con ```git pull (clave ssh do repositorio)```
+
+![pull](./capturas%20git/Captura%20pull.PNG)
