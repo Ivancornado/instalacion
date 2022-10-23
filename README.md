@@ -13,6 +13,7 @@
   - [7.2 Configuración parametrods globales de git](#72-configuración-parametrods-globales-de-git)
   - [7.3 Engadir e xerar claves ssh a GitHub](#73-engadir-e-xerar-claves-ssh-a-github)
   - [8.0 Copiar repositorios en outro equipo](#80-copiar-repositorios-en-outro-equipo)
+  - [9.0 Modificar .gitconfig](#90-modificar-gitconfig)
 
 # 1.0 Instalacion Ubuntu
 
@@ -201,6 +202,12 @@ Primeiro teremos q copiar os repositorios de git na maquina, iso faremolo con ``
 
 ![clone](./capturas%20git/Captura%20clone.PNG)
 
-Ahora importarimos o repositorio con ```git pull (clave ssh do repositorio)```
+Ahora importaremos o repositorio con ```git pull (clave ssh do repositorio)```
 
 ![pull](./capturas%20git/Captura%20pull.PNG)
+
+## 9.0 Modificar .gitconfig
+
+Para isto aseguraremonos de estar no home ```~``` , unha vez no home modifivaromos o directorio .config ```nano .gitconfig```
+
+![.config](./capturas%20git/format.PNG)
