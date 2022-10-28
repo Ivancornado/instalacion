@@ -5,7 +5,9 @@
   - [1.0 Descripción do cometido do ficheiro ```/etc/passwd```](#10-descripción-do-cometido-do-ficheiro-etcpasswd)
   - [1.1 Estructura /etc/passwd](#11-estructura-etcpasswd)
   - [1.2 Formato /etc/passwd](#12-formato-etcpasswd)
+  - [1.3 Relacion ```chsh -s```](#13-relacion-chsh--s)
 - [2.0 Descripción /etc/shadow](#20-descripción-etcshadow)
+  - [2.1 Relación ```chsh -s```](#21-relación-chsh--s)
 
 # Resumen "/etc"
 
@@ -39,6 +41,20 @@ El contenido del fichero ```/etc/passwd``` determina quien puede acceder al sist
 
 **7. Comando/shell:** La ruta absoluta de un comando o shell (/bin/bash). Típicamente, esto es un caparazón. Tenga en cuenta que no tiene que ser un shell.
 
+## 1.3 Relacion ```chsh -s```
+Este comando nos permíte modificar la terminal de inicio del usuario desde ```/etc/passwd```.
+
+***Ejemplo:***
+
+-Antes
+![Shell antes](./Capturas-passwd/shellantes.png)
+
+-Despues
+![Shell despues](./Capturas-passwd/shelldespues.png)
+
 # 2.0 Descripción /etc/shadow
 El fichero /etc/shadow almacena las contraseñas de las cuentas de usuario. Se utiliza este fichero por seguridad. /etc/shadow es un archivo de texto que contiene información sobre las contraseñas de los usuarios del sistema. Es propiedad del usuario root y del grupo oculto y tiene 640 permisos (*El usuario propietario puede leer y escribir, el grupo puede leer el archivo y otros no pueden hacer nada*).
+
+## 2.1 Relación ```chsh -s```
+No tenemos ninguna relacion entre ```chsh -s``` e ```/etc/shadow``` ya que el shell se encuentra en ```/etc/passwd```, es decir, aún que ejecutemos el comando ```chsh -s``` no realizaremos cambios en el ```/etc/shadow```.
 
