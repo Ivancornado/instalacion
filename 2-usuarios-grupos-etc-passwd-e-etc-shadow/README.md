@@ -9,6 +9,7 @@
 - [2.0 Descripción do cometido /etc/shadow](#20-descripción-do-cometido-etcshadow)
   - [2.1 Relación ```chsh -s```](#21-relación-chsh--s)
 - [3.0 Comando ```useradd```](#30-comando-useradd)
+  - [3.1 Captura ```/etc/passwd```](#31-captura-etcpasswd)
 
 # Resumen "/etc"
 
@@ -61,5 +62,13 @@ No tenemos ninguna relacion entre ```chsh -s``` e ```/etc/shadow``` ya que el sh
 
 # 3.0 Comando ```useradd```
 
+Con el comando ```useradd``` crearemos usuarios e para engadir un home escribiremos ```--create-home``` diante do nome de usuario.
 
 ![useradd](./Capturas-passwd/useradd.png)
+
+## 3.1 Captura ```/etc/passwd```
+
+En esta captura de ```/etc/passwd``` podemos ver la estructura del usuario que acabamos de crear.
+
+![paswd](./Capturas-passwd/paswd.png)
+
