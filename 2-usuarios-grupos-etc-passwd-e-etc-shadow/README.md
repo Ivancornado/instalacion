@@ -21,10 +21,12 @@
   - [6.1 Captura resultado ```ls -l /home```](#61-captura-resultado-ls--l-home)
   - [6.2 Captura ```/etc/passwd```](#62-captura-etcpasswd)
   - [6.3 Captura ```/etc/shadow```](#63-captura-etcshadow)
-- [7.0 Volve crear o usuario do punto 4 con ```useradd```](#70-volve-crear-o-usuario-do-punto-4-con-useradd)
+- [7.0 Volve crear o usuario do punto 3 con ```adduser```](#70-volve-crear-o-usuario-do-punto-3-con-adduser)
   - [7.1 Captura ```ls -l /home``` despues de ```adduser```](#71-captura-ls--l-home-despues-de-adduser)
   - [7.2 Captura ```/etc/passwd```](#72-captura-etcpasswd)
   - [7.3 Captura ```/etc/shadow```](#73-captura-etcshadow)
+- [8.0 Elimina completamente o usuario creado no punto 3 / punto 7 con ```userdel```.](#80-elimina-completamente-o-usuario-creado-no-punto-3--punto-7-con-userdel)
+  - [8.1 captura ```ls -l /home```](#81-captura-ls--l-home)
 
 # Resumen "/etc"
 
@@ -156,7 +158,7 @@ Tras la ejecución podemos ver que el usuario no aparece en ```/etc/shadow```
 
 ![shadow](./Capturas-passwd/shadow77.png)
 
-# 7.0 Volve crear o usuario do punto 4 con ```useradd```
+# 7.0 Volve crear o usuario do punto 3 con ```adduser```
 Antes:
 
 ![ls](./Capturas-passwd/ls8.png)
@@ -174,4 +176,19 @@ Despues:
 ## 7.3 Captura ```/etc/shadow```
 
 ![shadow](./Capturas-passwd/shadow8.png)
+
+# 8.0 Elimina completamente o usuario creado no punto 3 / punto 7 con ```userdel```.
+
+![userdel](./Capturas-passwd/userdell9.png)
+
+## 8.1 captura ```ls -l /home```
+
+Antes:
+
+![ls](./Capturas-passwd/lsd8.png)
+
+Despues:
+
+![ls](./Capturas-passwd/userdell99.png)
+
 
