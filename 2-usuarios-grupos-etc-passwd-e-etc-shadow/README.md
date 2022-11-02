@@ -21,6 +21,10 @@
   - [6.1 Captura resultado ```ls -l /home```](#61-captura-resultado-ls--l-home)
   - [6.2 Captura ```/etc/passwd```](#62-captura-etcpasswd)
   - [6.3 Captura ```/etc/shadow```](#63-captura-etcshadow)
+- [7.0 Volve crear o usuario do punto 4 con ```useradd```](#70-volve-crear-o-usuario-do-punto-4-con-useradd)
+  - [7.1 Captura ```ls -l /home``` despues de ```adduser```](#71-captura-ls--l-home-despues-de-adduser)
+  - [7.2 Captura ```/etc/passwd```](#72-captura-etcpasswd)
+  - [7.3 Captura ```/etc/shadow```](#73-captura-etcshadow)
 
 # Resumen "/etc"
 
@@ -151,4 +155,23 @@ Tras la ejecución podemos ver que el usuario no aparece en ```/etc/passwd```
 Tras la ejecución podemos ver que el usuario no aparece en ```/etc/shadow```
 
 ![shadow](./Capturas-passwd/shadow77.png)
+
+# 7.0 Volve crear o usuario do punto 4 con ```useradd```
+Antes:
+
+![ls](./Capturas-passwd/ls8.png)
+
+## 7.1 Captura ```ls -l /home``` despues de ```adduser```
+
+Despues:
+
+![ls](./Capturas-passwd/lsd8.png)
+
+## 7.2 Captura ```/etc/passwd```
+
+![shadow](./Capturas-passwd/passwd8.png)
+
+## 7.3 Captura ```/etc/shadow```
+
+![shadow](./Capturas-passwd/shadow8.png)
 
