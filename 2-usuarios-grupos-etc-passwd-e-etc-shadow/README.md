@@ -37,6 +37,8 @@
 - [13.0 Eliminación de grupos](#130-eliminación-de-grupos)
 - [14.0 Comando chage](#140-comando-chage)
 - [15.0 Validez de contraseña](#150-validez-de-contraseña)
+- [16.0 Carpetas y permisos de carpetas](#160-carpetas-y-permisos-de-carpetas)
+- [16.1 Ejemplo](#161-ejemplo)
 
 # Resumen "/etc"
 
@@ -272,3 +274,28 @@ sudo chage -m [duracion en dias] -M [duracion en dias] [nombre-usuario]
 ![](./Capturas-passwd/berto.png)
 
 
+# 16.0 Carpetas y permisos de carpetas
+
+Usamos ```chmod``` para establecer permisos a un usuario en una carpeta.
+```
+sudo chmod [permisos] [documento o carpeta]
+```
+r: Permiso de lectura (read); también llamado bit R
+
+w: Permiso de escritura (write); también llamado bit W
+
+x: Permiso de ejecución (execute); también llamado bit X
+
+Carácter para clases de usuarios: Significado
+
+u: user, propietario
+
+g: group, grupo
+
+o: other, otros
+
+a: all, todas las clases
+
+# 16.1 Ejemplo
+
+![](./Capturas-passwd/chmod.png)
