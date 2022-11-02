@@ -38,7 +38,9 @@
 - [14.0 Comando chage](#140-comando-chage)
 - [15.0 Validez de contraseña](#150-validez-de-contraseña)
 - [16.0 Carpetas y permisos de carpetas](#160-carpetas-y-permisos-de-carpetas)
-- [16.1 Ejemplo](#161-ejemplo)
+  - [16.1 Ejemplo](#161-ejemplo)
+- [17.0 Cambio de propetario de carpeta o archivo](#170-cambio-de-propetario-de-carpeta-o-archivo)
+  - [17.1 Ejemplo](#171-ejemplo)
 
 # Resumen "/etc"
 
@@ -296,6 +298,21 @@ o: other, otros
 
 a: all, todas las clases
 
-# 16.1 Ejemplo
+## 16.1 Ejemplo
 
 ![](./Capturas-passwd/chmod.png)
+
+# 17.0 Cambio de propetario de carpeta o archivo
+OPCIONES:
+
+-R: Cambia el permiso en archivos que estén en subdirectorios del directorio en el que estés en ese momento.
+
+-c: Cambia el permiso para cada archivo.
+
+-f: Previene a chown de mostrar mensajes de error cuando es incapaz de cambiar la titularidad de un archivo.
+
+## 17.1 Ejemplo
+```
+chown -R juliet-berto projects/
+```
+![](./Capturas-passwd/chown.png)
