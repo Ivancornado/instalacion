@@ -29,6 +29,9 @@
   - [8.1 captura ```ls -l /home```](#81-captura-ls--l-home)
 - [9.0 ¿Que es ```/etc/skel```?](#90-que-es-etcskel)
 - [10.0  Para que sirve el fichero ```/etc/group```](#100--para-que-sirve-el-fichero-etcgroup)
+- [11.0 Creación de grupos e usuarios](#110-creación-de-grupos-e-usuarios)
+  - [11.1 Captura ```/etc/group```](#111-captura-etcgroup)
+  - [11.2 Captura ```/etc/passwd```](#112-captura-etcpasswd)
 
 # Resumen "/etc"
 
@@ -212,3 +215,15 @@ Lista de los miembros del grupo, separados por comas (sin espacios)
 ```
 ![group](./Capturas-passwd/group.png)
 
+# 11.0 Creación de grupos e usuarios
+![directors](./Capturas-passwd/directors.png)
+
+## 11.1 Captura ```/etc/group```
+![directors](./Capturas-passwd/dir.png)
+
+Podemos ver la creacion del propio grupo, y los usuarios añadidos. 
+
+## 11.2 Captura ```/etc/passwd```
+![directors](./Capturas-passwd/passwd10.png)
+
+Aparte de la creacion de los usuarios, vemos que estes tienen el grupo, el cual hemos creado y le hemos añadido a esos tres usuarios.
