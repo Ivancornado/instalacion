@@ -12,8 +12,11 @@
   - [3.1 Captura ```/etc/passwd```](#31-captura-etcpasswd)
   - [3.2 Captura ```/etc/shadow```](#32-captura-etcshadow)
 - [4.0 Creación de una contraseña para nuestro usuario.](#40-creación-de-una-contraseña-para-nuestro-usuario)
-  - [4.1 Cambios en ```/etc/shadow```](#41-cambios-en-etcshadow)
+  - [4.1 Cambios en ```/etc/passwd```](#41-cambios-en-etcpasswd)
+  - [4.2 Cambios en ```/etc/shadow```](#42-cambios-en-etcshadow)
 - [5.0 Observación ```ls -l /home```](#50-observación-ls--l-home)
+  - [5.1 Captura ```/etc/passwd```](#51-captura-etcpasswd)
+  - [5.2 Captura ```/etc/shadow```](#52-captura-etcshadow)
 
 # Resumen "/etc"
 
@@ -86,10 +89,37 @@ Para crear una contraseña usamos el comando ```passwd``` seguido del nombre de 
 
 ![paswd](./Capturas-passwd/passwdalumno.png)
 
-## 4.1 Cambios en ```/etc/shadow```
+## 4.1 Cambios en ```/etc/passwd```
+
+![paswd](./Capturas-passwd/passwdd.png)
+
+## 4.2 Cambios en ```/etc/shadow```
 
 Como podemos ver al crear unha contraseña aparece codificada en ```/etc/shadow```.
 ![shadow](./Capturas-passwd/shadow2.png)
 
 # 5.0 Observación ```ls -l /home```
+
+Antes:
+
+![antes](./Capturas-passwd/antes.png)
+
+Creamos el usuario **punto7**
+
+Despues:
+
+![despues](./Capturas-passwd/despues.png)
+
+## 5.1 Captura ```/etc/passwd```
+
+Na seguinte captura podemos ver a situación de ```/etc/passwd```
+
+![passwd7](./Capturas-passwd/passwd7.png)
+
+## 5.2 Captura ```/etc/shadow```
+
+Na seguinte captura podemos ver a situación de ```/etc/shadow```
+
+![shadow7](./Capturas-passwd/shadow7.png)
+
 
