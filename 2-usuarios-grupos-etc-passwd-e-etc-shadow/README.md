@@ -88,5 +88,8 @@ Para crear una contraseña usamos el comando ```passwd``` seguido del nombre de 
 
 ## 4.1 Cambios en ```/etc/shadow```
 
+Como podemos ver al crear unha contraseña aparece codificada en ```/etc/shadow```.
+![shadow](./Capturas-passwd/shadow2.png)
 
 # 5.0 Observación ```ls -l /home```
+
