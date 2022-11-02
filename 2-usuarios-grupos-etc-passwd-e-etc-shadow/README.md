@@ -27,6 +27,8 @@
   - [7.3 Captura ```/etc/shadow```](#73-captura-etcshadow)
 - [8.0 Elimina completamente o usuario creado no punto 3 / punto 7 con ```userdel```.](#80-elimina-completamente-o-usuario-creado-no-punto-3--punto-7-con-userdel)
   - [8.1 captura ```ls -l /home```](#81-captura-ls--l-home)
+- [9.0 ¿Que es ```/etc/skel```?](#90-que-es-etcskel)
+- [10.0](#100)
 
 # Resumen "/etc"
 
@@ -192,3 +194,10 @@ Despues:
 ![ls](./Capturas-passwd/userdell99.png)
 
 
+# 9.0 ¿Que es ```/etc/skel```?
+
+Es bastante simple de configurar y usar. Proporciona una forma de estar seguro de que todos los nuevos usuarios de tu sistema LFS tienen la misma configuración inicial. El directorio ```/etc/skel``` es usado por el programa /usr/sbin/useradd.
+
+![skell](./Capturas-passwd/skell.png)
+
+# 10.0 
