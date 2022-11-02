@@ -17,6 +17,10 @@
 - [5.0 Observación ```ls -l /home```](#50-observación-ls--l-home)
   - [5.1 Captura ```/etc/passwd```](#51-captura-etcpasswd)
   - [5.2 Captura ```/etc/shadow```](#52-captura-etcshadow)
+- [6.0 Elimina o usuario creado no punto 4 con userdel sen flags.](#60-elimina-o-usuario-creado-no-punto-4-con-userdel-sen-flags)
+  - [6.1 Captura resultado ```ls -l /home```](#61-captura-resultado-ls--l-home)
+  - [6.2 Captura ```/etc/passwd```](#62-captura-etcpasswd)
+  - [6.3 Captura ```/etc/shadow```](#63-captura-etcshadow)
 
 # Resumen "/etc"
 
@@ -112,14 +116,39 @@ Despues:
 
 ## 5.1 Captura ```/etc/passwd```
 
-Na seguinte captura podemos ver a situación de ```/etc/passwd```
+En la siguiente captura podemos ver la situación de ```/etc/passwd```
 
 ![passwd7](./Capturas-passwd/passwd7.png)
 
 ## 5.2 Captura ```/etc/shadow```
 
-Na seguinte captura podemos ver a situación de ```/etc/shadow```
+En la siguiente captura podemos ver la situación de ```/etc/shadow```
 
 ![shadow7](./Capturas-passwd/shadow7.png)
 
+
+# 6.0 Elimina o usuario creado no punto 4 con userdel sen flags. 
+
+![userdell](./Capturas-passwd/userdell.png)
+
+## 6.1 Captura resultado ```ls -l /home```
+Antes:
+
+![antes](./Capturas-passwd/antes.png)
+
+Despues:
+
+![despues](./Capturas-passwd/despuess.png)
+
+## 6.2 Captura ```/etc/passwd```
+
+Tras la ejecución podemos ver que el usuario no aparece en ```/etc/passwd```
+
+![passwd](./Capturas-passwd/passwd77.png)
+
+## 6.3 Captura ```/etc/shadow```
+
+Tras la ejecución podemos ver que el usuario no aparece en ```/etc/shadow```
+
+![shadow](./Capturas-passwd/shadow77.png)
 
