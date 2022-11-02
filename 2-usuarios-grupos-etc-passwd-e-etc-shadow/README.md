@@ -36,6 +36,7 @@
   - [12.1 Eliminacion de jean-luc-godard e andrei-tarkovsky del grupo directors.](#121-eliminacion-de-jean-luc-godard-e-andrei-tarkovsky-del-grupo-directors)
 - [13.0 Eliminación de grupos](#130-eliminación-de-grupos)
 - [14.0 Comando chage](#140-comando-chage)
+- [15.0 Validez de contraseña](#150-validez-de-contraseña)
 
 # Resumen "/etc"
 
@@ -262,5 +263,12 @@ El comando ```chage``` nos permite configurar el vencimiento de la contraseña d
 sudo chage -l juliet-berto
 ```
 ![](./Capturas-passwd/chage.png)
+
+# 15.0 Validez de contraseña
+Para cambiar la validez es con el comando:
+```
+sudo chage -m [duracion en dias] -M [duracion en dias] [nombre-usuario]
+```
+![](./Capturas-passwd/berto.png)
 
 
