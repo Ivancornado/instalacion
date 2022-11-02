@@ -35,6 +35,7 @@
 - [12.0 Eliminar usuarios de grupos](#120-eliminar-usuarios-de-grupos)
   - [12.1 Eliminacion de jean-luc-godard e andrei-tarkovsky del grupo directors.](#121-eliminacion-de-jean-luc-godard-e-andrei-tarkovsky-del-grupo-directors)
 - [13.0 Eliminación de grupos](#130-eliminación-de-grupos)
+- [14.0 Comando chage](#140-comando-chage)
 
 # Resumen "/etc"
 
@@ -253,5 +254,13 @@ Importante: Con este comando verificaremos que el grupo newbie no es grupo princ
 
 ![group](./Capturas-passwd/delgroup.png)
 
+# 14.0 Comando chage
+
+El comando ```chage``` nos permite configurar el vencimiento de la contraseña de un usuario, así como establecer la caducidad de la cuenta de un usuario. El sistema utiliza esta información para determinar cuándo un usuario debe cambiar su contraseña.
+
+```
+sudo chage -l juliet-berto
+```
+![](./Capturas-passwd/chage.png)
 
 
