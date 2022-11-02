@@ -21,14 +21,14 @@
   - [6.1 Captura resultado ```ls -l /home```](#61-captura-resultado-ls--l-home)
   - [6.2 Captura ```/etc/passwd```](#62-captura-etcpasswd)
   - [6.3 Captura ```/etc/shadow```](#63-captura-etcshadow)
-- [7.0 Volve crear o usuario do punto 3 con ```adduser```](#70-volve-crear-o-usuario-do-punto-3-con-adduser)
+- [7.0 Vuelve a crear el usuario del punto 3 con ```adduser```](#70-vuelve-a-crear-el-usuario-del-punto-3-con-adduser)
   - [7.1 Captura ```ls -l /home``` despues de ```adduser```](#71-captura-ls--l-home-despues-de-adduser)
   - [7.2 Captura ```/etc/passwd```](#72-captura-etcpasswd)
   - [7.3 Captura ```/etc/shadow```](#73-captura-etcshadow)
-- [8.0 Elimina completamente o usuario creado no punto 3 / punto 7 con ```userdel```.](#80-elimina-completamente-o-usuario-creado-no-punto-3--punto-7-con-userdel)
+- [8.0 Elimina completamente el usuario creado en el punto 3 / punto 7 con ```userdel```.](#80-elimina-completamente-el-usuario-creado-en-el-punto-3--punto-7-con-userdel)
   - [8.1 captura ```ls -l /home```](#81-captura-ls--l-home)
 - [9.0 ¿Que es ```/etc/skel```?](#90-que-es-etcskel)
-- [10.0](#100)
+- [10.0  Para que sirve el fichero ```/etc/group```](#100--para-que-sirve-el-fichero-etcgroup)
 
 # Resumen "/etc"
 
@@ -160,7 +160,7 @@ Tras la ejecución podemos ver que el usuario no aparece en ```/etc/shadow```
 
 ![shadow](./Capturas-passwd/shadow77.png)
 
-# 7.0 Volve crear o usuario do punto 3 con ```adduser```
+# 7.0 Vuelve a crear el usuario del punto 3 con ```adduser```
 Antes:
 
 ![ls](./Capturas-passwd/ls8.png)
@@ -179,7 +179,7 @@ Despues:
 
 ![shadow](./Capturas-passwd/shadow8.png)
 
-# 8.0 Elimina completamente o usuario creado no punto 3 / punto 7 con ```userdel```.
+# 8.0 Elimina completamente el usuario creado en el punto 3 / punto 7 con ```userdel```.
 
 ![userdel](./Capturas-passwd/userdell9.png)
 
@@ -200,4 +200,15 @@ Es bastante simple de configurar y usar. Proporciona una forma de estar seguro d
 
 ![skell](./Capturas-passwd/skell.png)
 
-# 10.0 
+# 10.0  Para que sirve el fichero ```/etc/group```
+
+Contiene los nombres de los grupos y una lisa de los usuarios que pertenecen a cada grupo. Cada línea representa un grupo y contiene 4 campos:
+
+```
+El nombre del grupo (es recomendable que no tenga más de 8 caracteres).
+La contraseña cifrada o bien una x que indica la existencia de un archivo gshadow.
+Le número de GID
+Lista de los miembros del grupo, separados por comas (sin espacios)
+```
+![group](./Capturas-passwd/group.png)
+
