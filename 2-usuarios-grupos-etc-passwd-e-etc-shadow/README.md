@@ -10,6 +10,7 @@
   - [2.1 Relación ```chsh -s```](#21-relación-chsh--s)
 - [3.0 Comando ```useradd```](#30-comando-useradd)
   - [3.1 Captura ```/etc/passwd```](#31-captura-etcpasswd)
+  - [3.2 Captura ```/etc/shadow```](#32-captura-etcshadow)
 - [4.0 Creación de una contraseña para nuestro usuario.](#40-creación-de-una-contraseña-para-nuestro-usuario)
   - [4.1 Cambios en ```/etc/shadow```](#41-cambios-en-etcshadow)
 - [5.0 Observación ```ls -l /home```](#50-observación-ls--l-home)
@@ -75,6 +76,10 @@ En esta captura de ```/etc/passwd``` podemos ver la estructura del usuario que a
 
 ![paswd](./Capturas-passwd/paswd.png)
 
+## 3.2 Captura ```/etc/shadow```
+
+![shadow](./Capturas-passwd/shadow.png)
+
 # 4.0 Creación de una contraseña para nuestro usuario.
 
 Para crear una contraseña usamos el comando ```passwd``` seguido del nombre de usuario al que le queremos poner la contraseña.
@@ -82,5 +87,6 @@ Para crear una contraseña usamos el comando ```passwd``` seguido del nombre de 
 ![paswd](./Capturas-passwd/passwdalumno.png)
 
 ## 4.1 Cambios en ```/etc/shadow```
+
 
 # 5.0 Observación ```ls -l /home```
