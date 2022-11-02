@@ -34,6 +34,7 @@
   - [11.2 Captura ```/etc/passwd```](#112-captura-etcpasswd)
 - [12.0 Eliminar usuarios de grupos](#120-eliminar-usuarios-de-grupos)
   - [12.1 Eliminacion de jean-luc-godard e andrei-tarkovsky del grupo directors.](#121-eliminacion-de-jean-luc-godard-e-andrei-tarkovsky-del-grupo-directors)
+- [13.0 Eliminación de grupos](#130-eliminación-de-grupos)
 
 # Resumen "/etc"
 
@@ -243,3 +244,14 @@ Ejemplos:
 sudo gpasswd --delete jean-luc-godard directors
 sudo gpasswd --delete andrei-tarkovsky directors
 ```
+# 13.0 Eliminación de grupos
+```
+sudo groupdel [nombre-grupo]
+```
+
+Importante: Con este comando verificaremos que el grupo newbie no es grupo principal de ningún usuario, de lo contrario no se nos permitirá eliminarlo.
+
+![group](./Capturas-passwd/delgroup.png)
+
+
+
