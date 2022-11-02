@@ -32,6 +32,8 @@
 - [11.0 Creación de grupos e usuarios](#110-creación-de-grupos-e-usuarios)
   - [11.1 Captura ```/etc/group```](#111-captura-etcgroup)
   - [11.2 Captura ```/etc/passwd```](#112-captura-etcpasswd)
+- [12.0 Eliminar usuarios de grupos](#120-eliminar-usuarios-de-grupos)
+  - [12.1 Eliminacion de jean-luc-godard e andrei-tarkovsky del grupo directors.](#121-eliminacion-de-jean-luc-godard-e-andrei-tarkovsky-del-grupo-directors)
 
 # Resumen "/etc"
 
@@ -227,3 +229,17 @@ Podemos ver la creacion del propio grupo, y los usuarios añadidos.
 ![directors](./Capturas-passwd/passwd10.png)
 
 Aparte de la creacion de los usuarios, vemos que estes tienen el grupo, el cual hemos creado y le hemos añadido a esos tres usuarios.
+
+# 12.0 Eliminar usuarios de grupos
+
+Para eliminar al usuario de uno de esos grupos, usaremos el comando ```gpasswd``` con el ```–Eliminar bandera``` seguido por el usuario que se eliminará y el grupo.
+```
+sudo gpasswd --delete [nombre usuario] [nombre grupo]
+```
+
+## 12.1 Eliminacion de jean-luc-godard e andrei-tarkovsky del grupo directors.
+Ejemplos:
+```
+sudo gpasswd --delete jean-luc-godard directors
+sudo gpasswd --delete andrei-tarkovsky directors
+```
