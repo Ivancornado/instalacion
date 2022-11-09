@@ -1,3 +1,17 @@
+# Definiciones:
+EFI: son las siglas de Extensible Firmware Interface y es un estándar que pretende sustituir a la BIOS, el sistema de arranque que se ha venido utilizando en los PCs desde sus inicios. El sistema EFI utiliza varios sensores para detectar el estado del motor y el estado del vehculo en marcha. Y la ECU del motor calcula el volumen de inyeccin de combustible ptimo y provoca que los inyectores lo inyecten.
+
+UEFI: es el acrónimo de "Unified Extensible Firmware Interface" o "Interfaz de Firmware Extensible Unificada". Es el firmware sucesor, escrito en C, del BIOS, sistema al que empezó a suceder a partir del año 2005, 30 años después del nacimiento de la BIOS.
+
+BIOS: La BIOS pone las funciones básicas de un ordenador a disposición del usuario. Al encenderlo, comprueba si las partes más importantes son funcionales, como la memoria, la CPU y otros componentes de hardware. Esta prueba se denomina autoprueba de arranque o power on self test (POST).
+
+GPT: La tabla de partición GUID (GPT) es un nuevo estilo de partición que forma parte de la especificación de interfaz de firmware extensible unificada (UEFI). Esto se utiliza para instalaciones de fábrica con Windows 8, 8.1 y 10 para mayor flexibilidad de partición y más funciones avanzadas de Windows.
+
+MBR: o master boot recordes el primer sector físico de un portador de datos (por ejemplo, un disco duro, una memoria USB) que se utiliza para arrancar (iniciar) los ordenadores. Para esto, el ordenador debe disponer de un BIOS y un sistema operativo x86.
+
+GUID: El identificador único global, en inglés: globally unique identifier (GUID) es un número pseudoaleatorio empleado en aplicaciones de software. El GUID es una implementación de Microsoft de un estándar llamado universally unique identifier (UUID), especificado por la Open Software Foundation (OSF).
+
+UUID:Son las siglas de Universally Unique IDentifier, que en inglés significa, literalmente, 'identificador único universal'. Como tal, el UUID es un código identificador estándar empleado en el proceso de construcción de software.
 # 1. Create and Configure a Virtual Machine
 ## 1.1 Creation
 Vamos a crear una maquina Arch, para eso seguiremos estos pasos en VirtualBox:
