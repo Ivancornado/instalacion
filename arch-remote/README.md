@@ -1,7 +1,46 @@
 # 1. Create and Configure a Virtual Machine
-
 ## 1.1 Creation
+Vamos a crear una maquina Arch, para eso seguiremos estos pasos en VirtualBox:
+
+Paso 1: Insertar un nombre para la maquina, sistema operativo y versión del sistema operativo:
+
+![nombre](./capturas-arch/nombre.PNG)
+
+Paso 2: Seleccionar tamaña de la memoría RAM (en este paso dejaremos suficiente espacio para la maquina real).
+
+![memoria](./capturas-arch/memoria.PNG)
+
+Paso 3: Indicaremos que queremos reservar el disco dinamicamente (Con esto evitaremos acaparar espacio del disco real que no contiene información).
+
+![](./capturas-arch/formatodisco.PNG)
+
+Paso 4: Seleccionaremos como formato de disco VDI.
+
+![](./capturas-arch/disco2.PNG)
+
+Paso 5: Selecionamremos el tamaño del disco duro que necesitamos.
+
+![](./capturas-arch/tamdisco.PNG)
+
 ## 1.2 Extra Configuration
+
+Unha vez tenemos la maquina creada en VirtualBox tendremos que configurar sus parametros y insertar la ISO de instalación.
+
+Paso 1: Seleccionamos los núcleos del procesador real que queremos usar para la maquina virtual.
+
+ ![config](./capturas-arch/config1.PNG)
+
+Paso 2: Aumentamos a memoria de vídeo al maximo permitido y cambiaremos el controlador gráfico por VBoxSVGA.
+
+![config](./capturas-arch/config2.PNG)
+
+Paso 3: Insertamos la ISO en el apartado almacenamiento.
+
+![config](./capturas-arch/config3.PNG)
+
+Paso 4: Cambiamos la configuración de red a Adaptador puente.
+![config](./capturas-arch/config4.PNG)
+
 ## 1.3 Setting up SSH
 ## 1.4 Plugging in Arch ISO
 # 2. Start the VM
