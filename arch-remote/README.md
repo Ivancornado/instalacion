@@ -55,6 +55,72 @@ Paso 3: Insertamos la ISO en el apartado almacenamiento.
 Paso 4: Cambiamos la configuración de red a Adaptador puente.
 ![config](./capturas-arch/config4.PNG)
 
+## 1.3 Configuración del teclado
+Al iniciar la máquina, nos encontraremos dentro de la ISO de instalacin, donde recoge algunos recursos para instalar el SO.
+
+El problema que tendremos es que tendremos el teclado estara en una distrubucion que no es la española, para cambiarlo usaremos el comando:
+```
+loadkeys es
+```
+
+## 1.4 Intalación y configuración SSH
+Lo siguiente que haremos, sera instalar el ```openssh```, para que la instalacion se dificulte lo menos posible, y podamos copiar los comandos, y reflector nos servira para que la lista de servidores de replica estea actualizada.
+
+```
+pacman -Syy reflector openssh
+```
+Y lo iniciaremos:
+
+```
+systemctl start sshd
+```
+
+Ahora, miraremos la ip de la máquina, ya que necesitaremos su IP para realizar el ssh:
+```
+ip a
+```
+
+Ahora, estableceremos una contraseña para root, para el ssh, y evitar editar ficheros:
+```
+passwd root
+```
+
+Abriremos un terminal, y pondremos el comando para realizar el ssh como root, en este caso usaremos root, ya que no tenemos un usuario creado:
+```
+ssh root@[ip de la maquina]
+```
+
+Esto nos permitira conectarnos remotamente a la máquina, lo cual nos facilitara la instalacion.
+
+A continuación, miraremos si el reloj esta sincronizado (por lo general no lo esta):
+```
+timedatectl set-ntp true
+```
+
+Ahora, refrescaremos los servidores con ```reflector```
+```
+reflector -c Spain -a 10 --sort rate --save /etc/pacman.d/mirrorlist
+```
+
+Antes de particionar, debemos ver los discos que tenemos, el comando para ello es:
+```
+fdisk -l    O    lsblk
+```
+
+Ahora crearemos las particiones con gdisk, para ello usaremos el siguiente comando, donde elegiremos el tipo de particion, que será EFI, en ese menu sera ef00:
+```
+gdisk /dev/sda
+```
+
+Ahora, crearewmos una carpeta donde montaremos las particiones:
+```
+mkdir -p /mnt/etc/fstab
+```
+
+E instalaremos el firmware de linux y vim:
+```
+pacstrap /mnt base linux linux-firmware vim
+```
 ## 1.3 Setting up SSH
 ## 1.4 Plugging in Arch ISO
 # 2. Start the VM
