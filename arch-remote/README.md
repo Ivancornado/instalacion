@@ -117,7 +117,8 @@ Ahora crearemos las particiones con gdisk, para ello usaremos el siguiente coman
 gdisk /dev/sda
 ```
 
-Ahora, crearewmos una carpeta donde montaremos las particiones:
+## 1.9 Creación carpetas para montar particiones
+Ahora, crearemos una carpeta donde montaremos las particiones:
 ```
 mkdir -p /mnt/etc/fstab
 ```
