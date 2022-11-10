@@ -12,7 +12,9 @@ MBR: o master boot recordes el primer sector físico de un portador de datos (po
 GUID: El identificador único global, en inglés: globally unique identifier (GUID) es un número pseudoaleatorio empleado en aplicaciones de software. El GUID es una implementación de Microsoft de un estándar llamado universally unique identifier (UUID), especificado por la Open Software Foundation (OSF).
 
 UUID:Son las siglas de Universally Unique IDentifier, que en inglés significa, literalmente, 'identificador único universal'. Como tal, el UUID es un código identificador estándar empleado en el proceso de construcción de software.
+
 # 1. Create and Configure a Virtual Machine
+
 ## 1.1 Creation
 Vamos a crear una maquina Arch, para eso seguiremos estos pasos en VirtualBox:
 
@@ -85,18 +87,18 @@ Ahora, estableceremos una contraseña para root, para el ssh, y evitar editar fi
 passwd root
 ```
 
-Abriremos un terminal, y pondremos el comando para realizar el ssh como root, en este caso usaremos root, ya que no tenemos un usuario creado:
+Abriremos un terminal (en mi caso PuTTY), y pondremos el comando para realizar el ssh como root, en este caso usaremos root, ya que no tenemos un usuario creado:
 ```
-ssh root@[ip de la maquina]
+ssh root@[ip de la maquina]10.0.8.99
 ```
 
 Esto nos permitira conectarnos remotamente a la máquina, lo cual nos facilitara la instalacion.
 
+## 1.5 Timedatectl
 A continuación, miraremos si el reloj esta sincronizado (por lo general no lo esta):
 ```
 timedatectl set-ntp true
 ```
-
 Ahora, refrescaremos los servidores con ```reflector```
 ```
 reflector -c Spain -a 10 --sort rate --save /etc/pacman.d/mirrorlist
