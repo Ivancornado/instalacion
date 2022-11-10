@@ -117,12 +117,13 @@ Ahora crearemos las particiones con gdisk, para ello usaremos el siguiente coman
 gdisk /dev/sda
 ```
 
-## 1.9 Creación carpetas para montar particiones
+## 1.9 Creación carpetas para montar particiones.
 Ahora, crearemos una carpeta donde montaremos las particiones:
 ```
 mkdir -p /mnt/etc/fstab
 ```
 
+## 1.10 Instalar firmware de vim.
 E instalaremos el firmware de linux y vim:
 ```
 pacstrap /mnt base linux linux-firmware vim
