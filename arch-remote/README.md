@@ -106,6 +106,7 @@ Ahora, refrescaremos los servidores con ```reflector```
 reflector -c Spain -a 10 --sort rate --save /etc/pacman.d/mirrorlist
 ```
 
+## 1.7 Particionar discos con ```lsblk```
 Antes de particionar, debemos ver los discos que tenemos, el comando para ello es:
 ```
 fdisk -l    O    lsblk
