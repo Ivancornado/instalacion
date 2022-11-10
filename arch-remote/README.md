@@ -99,6 +99,8 @@ A continuación, miraremos si el reloj esta sincronizado (por lo general no lo e
 ```
 timedatectl set-ntp true
 ```
+
+## 1.6 Refrescar servidores
 Ahora, refrescaremos los servidores con ```reflector```
 ```
 reflector -c Spain -a 10 --sort rate --save /etc/pacman.d/mirrorlist
