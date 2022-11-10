@@ -111,7 +111,7 @@ Antes de particionar, debemos ver los discos que tenemos, el comando para ello e
 ```
 fdisk -l    O    lsblk
 ```
-
+## 1.8 Crear particiones con ```gdisk```
 Ahora crearemos las particiones con gdisk, para ello usaremos el siguiente comando, donde elegiremos el tipo de particion, que será EFI, en ese menu sera ef00:
 ```
 gdisk /dev/sda
