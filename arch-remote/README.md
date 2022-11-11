@@ -178,6 +178,17 @@ E instalaremos el firmware de linux y vim:
 ```
 pacstrap /mnt base linux linux-firmware vim
 ```
+## 1.11 Generar ```fstab```
+Ahora generaremos el archivo fstab para quedefina las UUID de los discos:
+```
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+# 2.0 Acceso al sistema operativo instalado
+Ahora entraremos, al sistema operatvo que hemos instalado:
+```
+arch-chroot /mnt
+```
 
 
 ## 1.3 Setting up SSH
