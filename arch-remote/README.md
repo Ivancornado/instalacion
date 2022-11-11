@@ -109,19 +109,69 @@ reflector -c Spain -a 10 --sort rate --save /etc/pacman.d/mirrorlist
 ## 1.7 Particionar discos con ```lsblk```
 Antes de particionar, debemos ver los discos que tenemos, el comando para ello es:
 ```
-fdisk -l    O    lsblk
+lsblk
 ```
+
 ## 1.8 Crear particiones con ```gdisk```
 Ahora crearemos las particiones con gdisk, para ello usaremos el siguiente comando, donde elegiremos el tipo de particion, que será EFI, en ese menu sera ef00:
 ```
 gdisk /dev/sda
 ```
 
-## 1.9 Creación carpetas para montar particiones.
-Ahora, crearemos una carpeta donde montaremos las particiones:
+![gdisk](./maquina/crear%20particiones.jpeg)
+
+Como se pode ver na captura anterior faremos duas particions:
+Partición 1:
 ```
-mkdir -p /mnt/etc/fstab
+-Partition number: 1 (indicamos que estamos creando la partición 1).
+-First sector: (Indicamos el sector no que comezará la partición, en este caso seleccionamos el sector por defecto).
+-Last sector: (Como queremos crear otra partición indicamos que requerimos solo 200 MB)
+Hex code or GUID: (Como queremos crear una partición EFI escribimos ef00)
 ```
+
+Partición 2:
+```
+-Partition number: 1 (indicamos que estamos creando la partición 2).
+-First sector: (Indicamos el sector en el que comezará la partición,  seleccionamos el sector por defecto).
+-Last sector: (Como solo haremos dos particiónes indicaremos que ocupe el resto del discomo marcando o ultimo sector).
+Hex code or GUID: (Indicaremos el codigo 8300 que se corresponde con Ubuntu).
+```
+
+## 1.9.1 Creación carpetas para montar particiones.
+Primeiro debemos formatear las particiónes:
+
+Formato partición 1:
+```
+mkfs.fat -F 32 /dev/sda1
+```
+Formatearemos a partición en FAT32
+
+Formato partición 1:
+```
+mkfs.ext4 /dev/sda2
+```
+Formatearemos a partición en EXT4
+
+### 1.9.2 Montar carpetas
+Ahora montaremos las particiones 
+
+Montaje partición 2:
+```
+mount /dev/sda2 /mnt 
+```
+Para montar la partición 1 precisamos crear la carpeta
+```
+mkdir -p /mnt/boot
+```
+
+Montaje partición 2:
+```
+mount /dev/sda1 /mnt/boot
+```
+
+Por ultimo haremos ```lsblk``` para confirmar que están bien montadas.
+
+![montaje](./maquina/lsblkconparticionescreadas.PNG)
 
 ## 1.10 Instalar firmware de vim.
 E instalaremos el firmware de linux y vim:
