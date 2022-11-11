@@ -128,6 +128,8 @@ E instalaremos el firmware de linux y vim:
 ```
 pacstrap /mnt base linux linux-firmware vim
 ```
+
+
 ## 1.3 Setting up SSH
 ## 1.4 Plugging in Arch ISO
 # 2. Start the VM
