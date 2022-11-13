@@ -262,4 +262,11 @@ El significado de las flags es:
 
 **-s/--shell:** define la ruta y el nombre de archivo del intérprete de línea de órdenes de inicio de sesión predeterminado del usuario. Una vez que se completa el arranque, el intérprete de línea de órdenes de inicio de sesión predeterminado es el que se especifica aquí. Asegúrese de que el intérprete de línea de órdenes elegido esté instalado si es distinto a Bash.
 
+## 3.2 Asignación de contraseña para el usuario.
+Crearemos una contraseña con ```passwd```
+```
+passwd alumno
+```
+
+
 
