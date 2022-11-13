@@ -288,3 +288,7 @@ Una vez inicimos el SO y accedesmos con el usuario creado procedemos a actualiza
 sudo pacman -Syy
 ```
 
+## 4.1 Instalación de programas y e entorno.
+Para la instalación del entorno usaremos el comando
+```
+
