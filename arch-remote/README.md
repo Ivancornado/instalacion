@@ -192,3 +192,17 @@ Ahora entraremos, al sistema operatvo que hemos instalado:
 ```
 arch-chroot /mnt
 ```
+
+## 2.1 Zona horaria
+
+Una vez dentro estableceremos la zona horaria, para eso usaremos
+```
+ln -sf /usr/share/zoneinfo/Spain /etc/localtime
+```
+![](./maquina/hora.PNG)
+
+Ahora generaremos el fichero que contiene información descriptiva sobre el reloj del modo de hardware:
+```
+hwclock --systohc
+```
+![](./maquina/hora%202.PNG)
