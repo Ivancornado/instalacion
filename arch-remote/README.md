@@ -291,4 +291,13 @@ sudo pacman -Syy
 ## 4.1 Instalación de programas y e entorno.
 Para la instalación del entorno usaremos el comando
 ```
+sudo pacman -S xf86-video-vmware xorg lightdm lightdm-gtk-greeter xfce4 xfce4-goodies firefox materia-gtk-theme papirus-icon-theme
+```
+
+
+## 4.2 Gestor de extensiones
+Habilitaremos el gestor de extrensiones que hemos instalado, para luego reiniciar y tener el entorno grafico:
+```
+sudo systemctl enable lightdm
+```
 
