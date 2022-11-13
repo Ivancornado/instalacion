@@ -272,4 +272,12 @@ passwd alumno
 export EDITOR = vim
 ```
 
+## 3.3 Edición de ```visudo```
+Abriremos el archivo sudoers con el comando visudo, donde descomentaremos '```%wheel ALL=(ALL:ALL) ALL:```'
 
+![](./maquina/visudo.PNG)
+
+Ahora reiniciaremos la máquina, y nos entrará al SO, accederemos con el usuario previamente creado. Ahora, actualizaremos los repositorios:
+```
+sudo pacman -Syy
+```
