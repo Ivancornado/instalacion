@@ -254,3 +254,12 @@ Ahora crearemos un usuario sudo, para eso lo crearemos en el grupo wheel.
 useradd -m -G wheel -s /bin/bash alumno
 ```
 
+El significado de las flags es:
+
+**-m/--create-home:** crea el directorio del usuario como /home/usuario. Dentro de este directorio, un usuario que no es superusuario puede escribir archivos, eliminarlos, instalar programas, etc.
+
+**-G/--groups:** introduce una lista de grupos suplementarios de los que el usuario también es miembro. Cada grupo está separado del siguiente mediante una coma, sin espacios intermedios. Por defecto el usuario pertenece solo al grupo inicial.
+
+**-s/--shell:** define la ruta y el nombre de archivo del intérprete de línea de órdenes de inicio de sesión predeterminado del usuario. Una vez que se completa el arranque, el intérprete de línea de órdenes de inicio de sesión predeterminado es el que se especifica aquí. Asegúrese de que el intérprete de línea de órdenes elegido esté instalado si es distinto a Bash.
+
+
