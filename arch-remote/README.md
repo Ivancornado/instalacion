@@ -215,3 +215,15 @@ echo KEYMAP=es /etc/vconsole.conf
 ![](./maquina/teclado%20idioma.PNG)
 
 
+## 2.2 Establecer nombre para la maquina desde Vim
+Ahora creamos el archivo ```/etc/hostname``` y ```/etc/hosts``` estableceremos un nombre para la máquina:
+```
+vim /etc/hostname
+```
+![](./maquina/etchostname.PNG)
+
+```
+vim /etc/hosts
+```
+![](./maquina/etchosts.PNG)
+
