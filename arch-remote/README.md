@@ -306,3 +306,26 @@ Para instalación usaremos o comando:
 ```
 sudo pacman nano -Syy
 ```
+
+# 5.0 Instalación de entorno alternativo
+GNOME es un entorno gráfico (gestor de ventanas) amigable que permite a los usuarios usar y configurar sus ordenadores de una forma sencilla. GNOME incluye un panel (para inicar aplicaciones y mostrar el estado de funcionamiento), un escritorio ( donde se pueden situar los datos y las aplicaciones), un conjunto estándar de aplicaciones y herramientas de escritorio, y un conjunto de convenciones que facilitan la operación y consistencia de las aplicaciones entre sí.
+
+Algunas de las características de este entorno de escritorio son:
+
+- GNOME es en su totalidad código abierto (software libre), con el código fuente disponible libremente y desarrollado por cientos de programadores en todo el mundo. Si quiere saber más sobre el proyecto Gnome puede visitar la página web de Gnome: http://www.gnome.org
+
+- GNOME tiene una serie de ventajas para los usuarios. Facilita el uso y la configuración de aplicaciones usando una simple pero potente interfaz gráfica.
+  
+- GNOME es altamente configurable, permitiéndole ajustar su escritorio con el aspecto que desee. El gestor de sesiones de GNOME recuerda la configuración previa, de manera que una vez que haya configurado las cosas a su gusto, las mantendrá así.
+
+- GNOME soporta muchos idiomas, y puede añadir más sin cambiar el software. GNOME soporta incluso varios protocolos de arrastrar y soltar (drag and drop D&D) para una máxima interoperabilidad con aplicaciones que no sean compatibles con GNOME.
+
+- GNOME tiene también una serie de ventajas para los programadores que indirectamente benefician también a los usuarios. Los programadores no necesitan comprar una cara licencia de software para hacer compatibles sus aplicaciones comerciales. De hecho, GNOME es independiente de cualquier compañía - ningún componente del interfaz esta controlado únicamente por una compañía o tiene restringidas la modificación o redistribución. Finalmente, GNOME funciona en numerosos sistemas operativos de tipo Unix, incluido Linux.
+  
+```
+sudo pacman -S gnome gnome-extra gnome-power-manager gnome-tweak-tool gnome-packagekit gnome-settings-daemon-updates polkit-gnome
+```
+
+Una vez instalado iniciaremos sesión con el usuario creado anteriormente y nos cargará el escritorio.
+
+![](./maquina/escrit.PNG)
