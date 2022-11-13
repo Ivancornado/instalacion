@@ -247,3 +247,10 @@ Ahora iniciaremos el servicio NetworkManager y el sshd, que al estar en la insta
 ```
 systemctl enable NetworkManager sshd
 ```
+
+## 3.1 Creación de usuario sudo en el sistema
+Ahora crearemos un usuario sudo, para eso lo crearemos en el grupo wheel.
+```
+useradd -m -G wheel -s /bin/bash alumno
+```
+
