@@ -227,3 +227,17 @@ vim /etc/hosts
 ```
 ![](./maquina/etchosts.PNG)
 
+
+# 3.0 Instalación de utilidades en el SO
+Instalaremos las utilidades utilidades que podemos ver en el comando:
+```
+pacman -Sy grub efibootmgr networkmanager network-manager-applet dialog os-prober mtools dosfstools base-devel linux-headers cups reflector openssh xdg-utils xdg-user-dirs virtualbox-guest-utils
+```
+![](./maquina/inst.PNG)
+
+Ahora instalaremos y configuraremos grub:
+```
+grub-install
+
+grub-mkconfig -o /boot/grub/grub.cfg
+```
