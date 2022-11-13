@@ -267,6 +267,9 @@ Crearemos una contraseña con ```passwd```
 ```
 passwd alumno
 ```
-
+## 3.2 Establecer editor predeterminado de nuestro usuario, para eso editaremos ```/etc/profile/````añadiendo lo sigiente en la linea 23:
+```
+export EDITOR = vim
+```
 
 
