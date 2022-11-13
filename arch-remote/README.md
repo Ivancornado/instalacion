@@ -187,7 +187,7 @@ genfstab -U /mnt
 /mnt/etc/fstab
 ```
 
-# 2.0 Acceso al sistema operativo instalado
+# 2.0 Configuración del sistema operativo instalado
 Ahora entraremos, al sistema operatvo que hemos instalado:
 ```
 arch-chroot /mnt
@@ -206,3 +206,12 @@ Ahora generaremos el fichero que contiene información descriptiva sobre el relo
 hwclock --systohc
 ```
 ![](./maquina/hora%202.PNG)
+
+## 2.1 Establecer idioma y distribución del teclado:
+```
+echo LANG=es_ES.UTF-8 /etc/locale.conf
+echo KEYMAP=es /etc/vconsole.conf
+```
+![](./maquina/teclado%20idioma.PNG)
+
+
