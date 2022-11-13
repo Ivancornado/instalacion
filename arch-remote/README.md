@@ -281,3 +281,10 @@ Ahora reiniciaremos la máquina, y nos entrará al SO, accederemos con el usuari
 ```
 sudo pacman -Syy
 ```
+
+# 4.0 Inicio del SO
+Una vez inicimos el SO y accedesmos con el usuario creado procedemos a actualizar los repositorios:
+```
+sudo pacman -Syy
+```
+
