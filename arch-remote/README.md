@@ -301,3 +301,8 @@ Habilitaremos el gestor de extrensiones que hemos instalado, para luego reinicia
 sudo systemctl enable lightdm
 ```
 
+## 4.3 Instalación nano
+Para instalación usaremos o comando:
+```
+sudo pacman nano -Syy
+```
