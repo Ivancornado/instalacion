@@ -241,3 +241,9 @@ grub-install
 
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+## 3.1 Iniciaremos el servicio NetworkManager y el sshd
+Ahora iniciaremos el servicio NetworkManager y el sshd, que al estar en la instalacion se encuentran instalados pero no iniciados:
+```
+systemctl enable NetworkManager sshd
+```
