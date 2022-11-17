@@ -22,6 +22,20 @@ O comando find ven instalado por defecto en Ubuntu 22.04 incluso na versión min
 
 Find pode ser usado para encontrar arquivos en Linux, este inicia unha busqueda recursiva en unha xerarquía de directorios seguindo uns certos criterios.
 
+### 2.1.2 Como usar ```find```
+
+Dende a liña de comandos escribiremos a seguinte estructura:
+
+find <span style="color:red">  *<directory_path>*</span>  <span style="color:blue"><search_parameter></span>.
+
+
+<span style="color:red">  directory_path: </span>Primeiro, escríbese o comando propiamente dito (find), seguido da ruta de directorio e un número variable de parámetros de procura. Despois un espazo e o valor do parámetro. Algúns dos parametros a introducir poderían ser os seguintes:
+
+![](./caps/parametros%20find.PNG)
+
+<span style="color:blue">search_parameter: </span> Tamén se pode combinar varios parámetros de búsqueda. O comando asume implícitamente que é unha operación lóxica AND. Esto pode escribirse explícitamente. Ademáis, podese utilizar un enlace OR ou negar una condición:
+
+![](./caps/parametros%20find2.PNG)
 
 
 Axuda:
