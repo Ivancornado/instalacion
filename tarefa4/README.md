@@ -5,6 +5,11 @@
     Utilizar como base unha instalación mínima de Ubuntu 22
 
 # 1 Cal é o páquete que permite manexar cuotas
+O paquete para manexar cuotas denominase ```quota```, este non ven enstalado por defecto en ubuntu 22.04 ou anteriores. 
+Para instalar o devandito paquete usaremos o seguinte comando.
+```
+sudo apt install quota
+```
 
 # 2 Cómo saber se o noso sistema ten instalados os módulos do kernel que permiten o manexo de cuotas
 
