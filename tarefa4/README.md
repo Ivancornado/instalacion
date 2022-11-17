@@ -13,6 +13,12 @@ sudo apt install quota
 
 # 2 Cómo saber se o noso sistema ten instalados os módulos do kernel que permiten o manexo de cuotas
 
+## 2.1 Find
+O comando find ven instalado por defecto en Ubuntu 22.04 incluso na versión minima. Isto podemos comprobalo con ```which find```
+
+![](./caps/find.PNG)
+
+
 Axuda:
 
     Explica o comando find, e os flags:
