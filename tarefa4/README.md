@@ -18,6 +18,11 @@ O comando find ven instalado por defecto en Ubuntu 22.04 incluso na versión min
 
 ![](./caps/find.PNG)
 
+### 2.1.1 Que é ```find```.
+
+Find pode ser usado para encontrar arquivos en Linux, este inicia unha busqueda recursiva en unha xerarquía de directorios seguindo uns certos criterios.
+
+
 
 Axuda:
 
