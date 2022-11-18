@@ -75,7 +75,12 @@ mount -vo remount < donde está montado >
 ```
 ![](./caps/mount.PNG)
 
+## 3.3 Ahora comprobaremos que as opcións de disco son correctas
+Para iso miraremos os contido de `/proc/mounts`
 
+![](./caps/proc.PNG)
+
+Como podemos ver a particion que editamos está montada correctamente.
 
 # 4 Activando as cuotas (tanto de usuario coma de grupo)
 
