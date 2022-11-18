@@ -62,13 +62,20 @@ Esta sería unha forma de saber se están instalados os módulos do kernel que p
 
 ## 3.1 Debemos editar o ficheiro `/etc/fstab`
 
-Editamos `/etc/fstab` para indicar cal dos sistemas de arquivos terá cuotas. Para iso `usrquota` y `grpquota`
+Editamos `/etc/fstab` para indicar cal dos sistemas de arquivos terá cuotas. Para iso engadimos `usrquota` e `grpquota`.
 
 ![](./caps/usrquota.PNG)
 
-    Fai os cambios pertinentes ao(s) ficheiro(s) adecuado(s)
-    Que hai que facer co disco afectado? (FAINO grin)
-    Comproba que as opcións de disco son correctas (PISTA: qué hai en /proc/mounts)?
+Como se pode ver na captura anterior  engadimos `usrquota` e `grpquota` na particion a cal engadiremos *cuotas*.
+
+## 3.2 Posteriormente teremos que remontar o filesystem que modificamos.
+Usaremnos o seguinte comando:
+```
+mount -vo remount < donde está montado >
+```
+![](./caps/mount.PNG)
+
+
 
 # 4 Activando as cuotas (tanto de usuario coma de grupo)
 
