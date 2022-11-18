@@ -84,7 +84,12 @@ Como podemos ver a particion que editamos está montada correctamente.
 
 # 4 Activando as cuotas (tanto de usuario coma de grupo)
 
-    Creación de ficheiros necesarios
+## 4.1 Creación de ficheiros necesarios
+Usaremos o comando `sudo quotacheck -ugm < directorio donde está montada a particion >` para crear os arquivos `aquota.user` y `aquota.group`.
+
+![](./caps/creararchivos.PNG)
+
+
     Recorda: verifica que se crearon os ficheiros adecuados
     Engade os módulos de quota ao kernel (se fose necesario)
     Activa o sistema de cuotas
