@@ -4,49 +4,67 @@
     Documenta todos os comandos con todos os flags que utilices!!!
     Utilizar como base unha instalación mínima de Ubuntu 22
 
-# 1 Cal é o páquete que permite manexar cuotas
+# 1 Cal é o páquete que permite manexar cuotas?
 O paquete para manexar cuotas denominase ```quota```, este non ven enstalado por defecto en ubuntu 22.04 ou anteriores. 
-Para instalar o devandito paquete usaremos o seguinte comando.
+
+Para instalar o devandito paquete usaremos o seguinte comando:
 ```
 sudo apt install quota
 ```
 
-# 2 Cómo saber se o noso sistema ten instalados os módulos do kernel que permiten o manexo de cuotas
 
 ## 2.1 Find
 O comando find ven instalado por defecto en Ubuntu 22.04 incluso na versión minima. Isto podemos comprobalo con ```which find```
 
 ![](./caps/find.PNG)
 
+
 ### 2.1.1 Que é ```find```.
 
 Find pode ser usado para encontrar arquivos en Linux, este inicia unha busqueda recursiva en unha xerarquía de directorios seguindo uns certos criterios.
 
-### 2.1.2 Como usar ```find```
 
-Dende a liña de comandos escribiremos a seguinte estructura:
+### 2.1.2 Explicación flags ```-type``` e ```-name```
 
-find <span style="color:red">  *<directory_path>*</span>  <span style="color:blue"><search_parameter></span>.
+`-type` Permite filtrar según o tipo de arquivo.
 
+Aquí podemos ver a forma de distinguir entre Arquivos, Directorios e Enlaces:
 
-<span style="color:red">  directory_path: </span>Primeiro, escríbese o comando propiamente dito (find), seguido da ruta de directorio e un número variable de parámetros de procura. Despois un espazo e o valor do parámetro. Algúns dos parametros a introducir poderían ser os seguintes:
+![](./caps/typepar.PNG)
 
-![](./caps/parametros%20find.PNG)
+Exemplo de `-type`:
+```
+find . -type f
+```
 
-<span style="color:blue">search_parameter: </span> Tamén se pode combinar varios parámetros de búsqueda. O comando asume implícitamente que é unha operación lóxica AND. Esto pode escribirse explícitamente. Ademáis, podese utilizar un enlace OR ou negar una condición:
+`-name` Para filtrar por nomes de archivo, utiliza el parámetro `-name`. Esto require un nome de arquivo exacto e distingue entre maiúsculas y minúsculas, para evitar que distinga entre maiúsculas e minusculas podemos engadir `-i` antes de `-name` e escribiríase `-iname`.
 
-![](./caps/parametros%20find2.PNG)
+Exemplo de `-name`:
+```
+find . -name <File_Name>
+```
+Exemplo de `-iname` (Para que pase por alto as mayusculas):
 
+```
+find . -iname <File_Name>
+```
 
-Axuda:
+### 2.1.3 Exemplo de uso, `find` para confirmar que os modulos kernel de `quota` están instalados.
+Exemplo de busqueda con `-type` e `-name`  para buscar arquivos:
+```
+find <Ruta que queremos buscar> -type f name <File_Name>
+```
+![](./caps/kernel.PNG)
 
-    Explica o comando find, e os flags:
-        -type (e os valores predeterminados que admite).
-        -name
-    Cómo podemos utilizar o comando find para saber se o noso sistema ten instalados os módulos do kernel que permiten o manexo de cuotas?
-    Qué paquete teriamos que instalar se non tivésemos eses módulos kernel instalados?
+Esta sería unha forma de saber se están instalados os módulos do kernel que permiten o manexo de cuotas con ```find```.
 
 # 3 Onde debemos activar/declarar as cuotas de usuario e grupo
+
+## 3.1 Debemos editar o ficheiro `/etc/fstab`
+
+Editamos `/etc/fstab` para indicar cal dos sistemas de arquivos terá cuotas. Para iso `usrquota` y `grpquota`
+
+![](./caps/usrquota.PNG)
 
     Fai os cambios pertinentes ao(s) ficheiro(s) adecuado(s)
     Que hai que facer co disco afectado? (FAINO grin)
