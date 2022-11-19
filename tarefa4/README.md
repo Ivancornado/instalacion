@@ -119,16 +119,26 @@ Significado del flag:
 
 ![](./caps/encender.PNG)
 
-# 5 Cuotas de usuario e de grupo
+# 5 Cuotas de usuario e de grupo.
 
-NOTA: warningbiohazardradioactive non usar setquota radioactivebiohazardwarning
+## 5.1 Creación usuarios con el comando `useradd`.
+![](./caps/usuarios.PNG)
 
-Cada vez que establezas unha cuota comproba cun comando que a estableciches correctamente.
+## 5.2 Creación de grupos con el comando `groupadd`.
+![](./caps/group.PNG)
 
-    Creade as usuarias veronica-lake, gene-tierney, ada-lovelace e hedy-lamarr.
-    Creade os grupos de usuarias actresses e scientists.
-    Incluide a veronica-lake, gene-tierney e hedy-lamarr no grupo actresses
-    Incluide a ada-lovelace e hedy-lamarr no grupo scientists.
+## 5.3 Incluir *veronica-lake, gene-tierney e hedy-lamarr* no grupo *actresses* con el comando `sudo usermod`.
+```
+sudo usermod -a -G <grupos> <usuario>
+```
+![](./caps/a%C3%B1adirg.PNG)
+
+
+## 5.3 Incluir *ada-lovelace* no grupo *scientists* con el comando `sudo usermod`.
+
+![](./caps/ada.PNG)
+
+
     Establece as seguintes cuotas de usuario:
         veronica-lake 100M soft e 150M hard.
         gene-tierney 200M soft e 250M hard.
