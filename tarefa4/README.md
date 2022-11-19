@@ -163,7 +163,16 @@ En este caso podese ver que ao salir e volver entrar os tamaños se mostran en b
 hedy-lamarr 800M soft e 1G hard.
 ![](./caps/hedy.PNG)
 
+### 5.4.2 Comprobación cuotas usuarios
+Para comprobar que as cuotas se crearon correctamente usaremos o comando `cuota` 
+```
+sudo quota -vs <Nome do usuario>
+```
+Flags:
+- -v imprimir máis información
+- -s mostrar unidades en (MB, GB...)
 
+![](./caps/comprobaci%C3%B3nveronica.PNG)
 
     Establecede as seguintes cuotas de grupo:
         actresses 400M soft e 450M hard
