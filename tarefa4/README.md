@@ -131,6 +131,9 @@ Significado del flag:
 ```
 sudo usermod -a -G <grupos> <usuario>
 ```
+Flags:
+
+
 ![](./caps/a%C3%B1adirg.PNG)
 
 
@@ -218,12 +221,19 @@ No caso dos grupos se asignamos 500Mb repartense entre os usuarios do grupo e a 
 
 # 7.0 Informes de cuotas
 
-Xeraremos un informe global das cuotas creadas
-7 Entrega
+Xeraremos un informe global das cuotas creadas,usaremos o seguinte comando.
+```
+sudo repquota -vug /
+```
+Flags:
+- -v mostrar también usuarios/grupos sin ningún uso
+- -u mostrar informacion a cerca de usuarios
+- -g mostrar informacion a cerca de grupos 
+  
+![](./caps/hitorial.PNG)
 
 
 
-repquota -vug /
 
 
 
