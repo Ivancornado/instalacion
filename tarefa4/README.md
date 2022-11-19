@@ -1,4 +1,32 @@
-
+- [1 Cal é o páquete que permite manexar cuotas?](#1-cal-é-o-páquete-que-permite-manexar-cuotas)
+  - [2.1 Find](#21-find)
+    - [2.1.1 Que é ```find```.](#211-que-é-find)
+    - [2.1.2 Explicación flags ```-type``` e ```-name```](#212-explicación-flags--type-e--name)
+    - [2.1.3 Exemplo de uso, `find` para confirmar que os modulos kernel de `quota` están instalados.](#213-exemplo-de-uso-find-para-confirmar-que-os-modulos-kernel-de-quota-están-instalados)
+- [3 Onde debemos activar/declarar as cuotas de usuario e grupo](#3-onde-debemos-activardeclarar-as-cuotas-de-usuario-e-grupo)
+  - [3.1 Debemos editar o ficheiro `/etc/fstab`](#31-debemos-editar-o-ficheiro-etcfstab)
+  - [3.2 Posteriormente teremos que remontar o filesystem que modificamos.](#32-posteriormente-teremos-que-remontar-o-filesystem-que-modificamos)
+  - [3.3 Ahora comprobaremos que as opcións de disco son correctas](#33-ahora-comprobaremos-que-as-opcións-de-disco-son-correctas)
+- [4 Activando as cuotas (tanto de usuario coma de grupo)](#4-activando-as-cuotas-tanto-de-usuario-coma-de-grupo)
+  - [4.1 Creación de ficheiros necesarios](#41-creación-de-ficheiros-necesarios)
+  - [4.2 verificamos que se crearon os ficheiros adecuados](#42-verificamos-que-se-crearon-os-ficheiros-adecuados)
+  - [4.3 Añadir modulos de quota al kernel.](#43-añadir-modulos-de-quota-al-kernel)
+  - [4.3 Activa o sistema de cuotas](#43-activa-o-sistema-de-cuotas)
+- [5 Cuotas de usuario e de grupo.](#5-cuotas-de-usuario-e-de-grupo)
+  - [5.1 Creación usuarios con el comando `useradd`.](#51-creación-usuarios-con-el-comando-useradd)
+  - [5.2 Creación de grupos con el comando `groupadd`.](#52-creación-de-grupos-con-el-comando-groupadd)
+  - [5.3 Incluir *veronica-lake, gene-tierney e hedy-lamarr* no grupo *actresses* con el comando `sudo usermod`.](#53-incluir-veronica-lake-gene-tierney-e-hedy-lamarr-no-grupo-actresses-con-el-comando-sudo-usermod)
+  - [5.3 Incluir *ada-lovelace* no grupo *scientists* con el comando `sudo usermod`.](#53-incluir-ada-lovelace-no-grupo-scientists-con-el-comando-sudo-usermod)
+  - [5.4 Establecer cuotas de usuario](#54-establecer-cuotas-de-usuario)
+    - [5.4.1 Engadir cuotas usuarios creados anteriormente.](#541-engadir-cuotas-usuarios-creados-anteriormente)
+    - [5.4.2 Comprobación cuotas usuarios](#542-comprobación-cuotas-usuarios)
+  - [5.5 Establecer cuotas de grupo](#55-establecer-cuotas-de-grupo)
+    - [5.5.1 Engadir cuotas grupos creados anteriormente.](#551-engadir-cuotas-grupos-creados-anteriormente)
+    - [5.5.2 Comprobación cuotas grupos](#552-comprobación-cuotas-grupos)
+- [6.0 Efectos do solapamento das cuotas entre gupos e usuarios.](#60-efectos-do-solapamento-das-cuotas-entre-gupos-e-usuarios)
+  - [6.1 Cómo funcionan as cuotas nun grupo?](#61-cómo-funcionan-as-cuotas-nun-grupo)
+  - [6.2 Cómo afectan aos usuarios do grupo?](#62-cómo-afectan-aos-usuarios-do-grupo)
+- [7.0 Informes de cuotas](#70-informes-de-cuotas)
 # 1 Cal é o páquete que permite manexar cuotas?
 O paquete para manexar cuotas denominase ```quota```, este non ven enstalado por defecto en ubuntu 22.04 ou anteriores. 
 
@@ -236,6 +264,3 @@ Informacion sacada de:
 [kernel](https://askubuntu.com/questions/153023/what-is-the-linux-image-extra-package-for-and-do-i-need-it)
 [grupos](https://serverfault.com/questions/327606/what-exactly-is-a-group-quota-filesystem)
 
-
-git tag -a v4 <derradeiro-hash-commit> -m "Entrega actividade 4"
-git push origin v4
