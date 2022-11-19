@@ -112,10 +112,10 @@ Este paquete instala controladores adicionais que quedan fora do paquete básico
 ## 4.3 Activa o sistema de cuotas
 En este momento las cuotas están desactivadas, para activarlas usaremos el comado.
 ```
-sudo quotaon -V < directorio donde está montado >
+sudo quotaon -v < directorio donde está montado >
 ```
 Significado del flag:
-- `-V` mostrar informacion y salir
+- `-v` Imprimir mas informacion
 
 ![](./caps/encender.PNG)
 
@@ -138,12 +138,33 @@ sudo usermod -a -G <grupos> <usuario>
 
 ![](./caps/ada.PNG)
 
+## 5.4 Establecer cuotas de usuario
+Para establecer cuotas usamos el comando `edquota`
+```
+sudo edquota -u < nombre del usuario >
+```
+Ao introducir o devandito comando abrirase un editor de texto no cal introduciremos os parametros requeridos.
 
-    Establece as seguintes cuotas de usuario:
-        veronica-lake 100M soft e 150M hard.
-        gene-tierney 200M soft e 250M hard.
-        ada-lovelace 500M soft e 600M hard.
-        hedy-lamarr 800M soft e 1G hard.
+Flags:
+- -u 
+
+### 5.4.1 Engadir cuotas usuarios creados anteriormente.
+veronica-lake 100M soft e 150M hard.
+![](./caps/veronica.PNG)
+
+gene-tierney 200M soft e 250M hard.
+![](./caps/gene.PNG)
+
+ada-lovelace 500M soft e 600M hard.
+![](./caps/adaquota.PNG)
+
+En este caso podese ver que ao salir e volver entrar os tamaños se mostran en bytes.
+
+hedy-lamarr 800M soft e 1G hard.
+![](./caps/hedy.PNG)
+
+
+
     Establecede as seguintes cuotas de grupo:
         actresses 400M soft e 450M hard
         scientist 900M soft e 1G hard
@@ -160,6 +181,12 @@ Comprobade os efectos que ten o solapamento das cuotas entre grupos e usuarias e
 
 Xera un informe global das cuotas creadas
 7 Entrega
+
+
+
+repquota -vug /
+
+
 
 Cando remates, establece un tag chamado v4 e con mensaxe "Entrega actividade 4" point_down
 
