@@ -87,10 +87,10 @@ Como podemos ver a particion que editamos está montada correctamente.
 ## 4.1 Creación de ficheiros necesarios
 Usaremos o comando `sudo quotacheck -ugm < directorio donde está montada a particion >` para crear os arquivos `aquota.user` e `aquota.group`.
 
-Flags:
--u crea un archivo de cuota llamado `aquota.user`
--g crea un archivo de cuota llamado `aquota.group`
--m deshabilita el remontaje del sistema de archivos al nivel de solo lectura
+Definición de los parámetros:
+- -u : simboliza que se creará un archivo de cuota basado en el usuario llamado `aquota.user`
+- -g : indica que se creará un archivo de cuota basado en grupos llamado `aquota.group`
+- -m: deshabilita el remontaje del sistema de archivos como de solo lectura y, al mismo tiempo, brinda resultados precisos en un entorno en el que el usuario sigue guardando archivos.
 
 ![](./caps/creararchivos.PNG)
 
