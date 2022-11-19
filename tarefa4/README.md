@@ -209,16 +209,16 @@ Flags:
 
 ## 6.1 Cómo funcionan as cuotas nun grupo?
 
-No caso dos grupos de asignamos se 500Mb estaremos asignando este tamaño a cada un dos usuarios dentro do grupo.
+No caso dos grupos se asignamos 500Mb repartense entre os usuarios do grupo e a parte correspondetente sumase a cuota hard de cada usuario.
 
 ## 6.2 Cómo afectan aos usuarios do grupo?
 
-        A cuota do grupo afecta aos membros do grupo (sumada)
-        A cuota do grupo afecta a cada membro do grupo (individualmente)
+ A cuota do grupo afecta aos membros do grupo (sumada)
 
-# 6 Informes de cuotas
 
-Xera un informe global das cuotas creadas
+# 7.0 Informes de cuotas
+
+Xeraremos un informe global das cuotas creadas
 7 Entrega
 
 
