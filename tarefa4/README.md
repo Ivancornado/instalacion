@@ -109,6 +109,15 @@ sudo apt install linux-image-extra-virtual
 
 Este paquete instala controladores adicionais que quedan fora do paquete básico del núcleo.
 
+## 4.3 Activa o sistema de cuotas
+En este momento las cuotas están desactivadas, para activarlas usaremos el comado.
+```
+sudo quotaon -V < directorio donde está montado >
+```
+Significado del flag:
+- `-V` mostrar informacion y salir
+
+![](./caps/encender.PNG)
 
 # 5 Cuotas de usuario e de grupo
 
