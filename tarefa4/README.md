@@ -1,8 +1,3 @@
-# Actividade 4: cuotas de disco
-
-    Documenta todo o proceso na carpeta correspondente do teu repo Github
-    Documenta todos os comandos con todos os flags que utilices!!!
-    Utilizar como base unha instalación mínima de Ubuntu 22
 
 # 1 Cal é o páquete que permite manexar cuotas?
 O paquete para manexar cuotas denominase ```quota```, este non ven enstalado por defecto en ubuntu 22.04 ou anteriores. 
@@ -132,7 +127,8 @@ Significado del flag:
 sudo usermod -a -G <grupos> <usuario>
 ```
 Flags:
-
+- `-a `agregar el usuario a los grupos complementarios mencionados por la opción `-G` sin eliminar al usuario de otros grupos
+- `-G`
 
 ![](./caps/a%C3%B1adirg.PNG)
 
@@ -149,7 +145,7 @@ sudo edquota -u < nombre do usuario >
 Ao introducir o devandito comando abrirase un editor de texto no cal introduciremos os parametros requeridos.
 
 Flags:
-- -u editar usuario
+- `-u` editar usuario
 
 ### 5.4.1 Engadir cuotas usuarios creados anteriormente.
 veronica-lake 100M soft e 150M hard.
@@ -172,8 +168,8 @@ Para comprobar que as cuotas se crearon correctamente usaremos o comando `cuota`
 sudo quota -vs <Nome do usuario>
 ```
 Flags:
-- -v imprimir máis información
-- -s mostrar unidades en (MB, GB...)
+- `-v` imprimir máis información
+- `-s` mostrar unidades en (MB, GB...)
 
 ![](./caps/comprobaci%C3%B3nveronica.PNG)
 
@@ -202,9 +198,9 @@ Para comprobar que as cuotas se crearon correctamente volveremos usar o comando 
 sudo quota -vs <Nome do grupo>
 ```
 Flags:
-- -v imprimir máis información
-- -s mostrar unidades en (MB, GB...)
-- -g mostrar informacion de los grupos
+- `-v` imprimir máis información
+- `-s` mostrar unidades en (MB, GB...)
+- `-g` mostrar informacion de los grupos
 ![](./caps/comprobargrupos.PNG)
 
 
@@ -226,18 +222,20 @@ Xeraremos un informe global das cuotas creadas,usaremos o seguinte comando.
 sudo repquota -vug /
 ```
 Flags:
-- -v mostrar también usuarios/grupos sin ningún uso
-- -u mostrar informacion a cerca de usuarios
-- -g mostrar informacion a cerca de grupos 
+- `-v` mostrar también usuarios/grupos sin ningún uso
+- `-u` mostrar informacion a cerca de usuarios
+- `-g` mostrar informacion a cerca de grupos 
   
 ![](./caps/hitorial.PNG)
 
+Informacion sacada de:
 
+[quota](https://www.ionos.es/digitalguide/servidores/configuracion/comando-linux-find/?ac=OM.WE.WEo42K356300T7073a&itc=L0Q5C23R-FAC1E9-&utm_source=google&utm_medium=cpc&utm_campaign=SGE-ES-MYW-MIXX---PERFORMANCE_MAX---&utm_term=&matchtype=&utm_content=&gclid=Cj0KCQiA1NebBhDDARIsAANiDD2Ha4iug-nsyRkJS3evdKnyvsmIe5P9yECbvyjrNAHCsCLddfxeWQ8aAuwmEALw_wcB&gclsrc=aw.ds),
+[quota2](http://apuntes.ucr.ac.cr/index.php/Crear_cuotas_de_espacio_para_usuarios_y_grupos),
+[quota3](https://es.linux-console.net/?p=199#gsc.tab=0),
+[kernel](https://askubuntu.com/questions/153023/what-is-the-linux-image-extra-package-for-and-do-i-need-it)
+[grupos](https://serverfault.com/questions/327606/what-exactly-is-a-group-quota-filesystem)
 
-
-
-
-Cando remates, establece un tag chamado v4 e con mensaxe "Entrega actividade 4" point_down
 
 git tag -a v4 <derradeiro-hash-commit> -m "Entrega actividade 4"
 git push origin v4
