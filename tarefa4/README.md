@@ -193,11 +193,26 @@ scientist 900M soft e 1G hard
 
 Como ocorre cos usuarios ainda que asignemos os tamaños en Mb se salimos e volvemos entrar ao arquivo o formato cambia.
 
-Comprobade os efectos que ten o solapamento das cuotas entre grupos e usuarias e explicádeos:
+### 5.5.2 Comprobación cuotas grupos 
+Para comprobar que as cuotas se crearon correctamente volveremos usar o comando `cuota` 
+```
+sudo quota -vs <Nome do grupo>
+```
+Flags:
+- -v imprimir máis información
+- -s mostrar unidades en (MB, GB...)
+- -g mostrar informacion de los grupos
+![](./caps/comprobargrupos.PNG)
 
-    Cómo funcionan as cuotas nun grupo?
-    Cómo afectan aos usuarios do grupo?
-    Posibilidades:
+
+# 6.0 Efectos do solapamento das cuotas entre gupos e usuarios.
+
+## 6.1 Cómo funcionan as cuotas nun grupo?
+
+No caso dos grupos de asignamos se 500Mb estaremos asignando este tamaño a cada un dos usuarios dentro do grupo.
+
+## 6.2 Cómo afectan aos usuarios do grupo?
+
         A cuota do grupo afecta aos membros do grupo (sumada)
         A cuota do grupo afecta a cada membro do grupo (individualmente)
 
