@@ -139,14 +139,14 @@ sudo usermod -a -G <grupos> <usuario>
 ![](./caps/ada.PNG)
 
 ## 5.4 Establecer cuotas de usuario
-Para establecer cuotas usamos el comando `edquota`
+Para establecer cuotas usamos o comando `edquota`
 ```
-sudo edquota -u < nombre del usuario >
+sudo edquota -u < nombre do usuario >
 ```
 Ao introducir o devandito comando abrirase un editor de texto no cal introduciremos os parametros requeridos.
 
 Flags:
-- -u 
+- -u editar usuario
 
 ### 5.4.1 Engadir cuotas usuarios creados anteriormente.
 veronica-lake 100M soft e 150M hard.
@@ -174,9 +174,24 @@ Flags:
 
 ![](./caps/comprobaci%C3%B3nveronica.PNG)
 
-    Establecede as seguintes cuotas de grupo:
-        actresses 400M soft e 450M hard
-        scientist 900M soft e 1G hard
+## 5.5 Establecer cuotas de grupo
+Para establecer cuotas de grupo tamén usamos o comando `edquota`
+```
+sudo edquota -g < nombre do grupo >
+```
+Ao introducir o devandito comando abrirase un editor de texto no cal introduciremos os parametros requeridos.
+
+Flags:
+- -g editar grupo
+  
+### 5.5.1 Engadir cuotas grupos creados anteriormente.
+actresses 400M soft e 450M hard
+![](./caps/actresses.PNG)
+
+scientist 900M soft e 1G hard
+![](./caps/acientists.PNG)
+
+Como ocorre cos usuarios ainda que asignemos os tamaños en Mb se salimos e volvemos entrar ao arquivo o formato cambia.
 
 Comprobade os efectos que ten o solapamento das cuotas entre grupos e usuarias e explicádeos:
 
