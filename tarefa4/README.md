@@ -71,7 +71,7 @@ Como se pode ver na captura anterior  engadimos `usrquota` e `grpquota` na parti
 ## 3.2 Posteriormente teremos que remontar o filesystem que modificamos.
 Usaremnos o seguinte comando:
 ```
-mount -vo remount < donde está montado >
+mount -vo remount < directorio donde está montado >
 ```
 ![](./caps/mount.PNG)
 
@@ -87,10 +87,10 @@ Como podemos ver a particion que editamos está montada correctamente.
 ## 4.1 Creación de ficheiros necesarios
 Usaremos o comando `sudo quotacheck -ugm < directorio donde está montada a particion >` para crear os arquivos `aquota.user` e `aquota.group`.
 
-Definición de los parámetros:
-- -u : simboliza que se creará un archivo de cuota basado en el usuario llamado `aquota.user`
-- -g : indica que se creará un archivo de cuota basado en grupos llamado `aquota.group`
-- -m: deshabilita el remontaje del sistema de archivos como de solo lectura y, al mismo tiempo, brinda resultados precisos en un entorno en el que el usuario sigue guardando archivos.
+Definición dos parámetros:
+- `-u:` simboliza que se creará un arquivo de cuota basado no usuario chamado `aquota.user`
+- `-g:` indica que se creará un arquivo de cuota basado en grupos chamado `aquota.group`
+- `-m:` deshabilita o remontaxe do sistema de arquivos como de solo lectura e, ao mesmo tempo, brinda resultados precisos en un entorno no que o usuario sigue guardando archivos.
 
 ![](./caps/creararchivos.PNG)
 
@@ -101,7 +101,13 @@ Usaremos `ls` seguido de `/` para confirmar que se crearon `aquota.user` e `aquo
 
     Engade os módulos de quota ao kernel (se fose necesario)
 
-## 4.3 Activa o sistema de cuotas
+## 4.3 Añadir modulos de quota al kernel.
+Non sería necesario añadilos ao kernel pero en caso de que queiramos facerlo usaremos o comando.
+```
+sudo apt install linux-image-extra-virtual
+```
+
+Este paquete instala controladores adicionais que quedan fora do paquete básico del núcleo.
 
 
 # 5 Cuotas de usuario e de grupo
