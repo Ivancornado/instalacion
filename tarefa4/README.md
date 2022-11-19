@@ -87,6 +87,11 @@ Como podemos ver a particion que editamos está montada correctamente.
 ## 4.1 Creación de ficheiros necesarios
 Usaremos o comando `sudo quotacheck -ugm < directorio donde está montada a particion >` para crear os arquivos `aquota.user` e `aquota.group`.
 
+Flags:
+-u crea un archivo de cuota llamado `aquota.user`
+-g crea un archivo de cuota llamado `aquota.group`
+-m deshabilita el remontaje del sistema de archivos al nivel de solo lectura
+
 ![](./caps/creararchivos.PNG)
 
 ## 4.2 verificamos que se crearon os ficheiros adecuados
@@ -94,9 +99,10 @@ Usaremos `ls` seguido de `/` para confirmar que se crearon `aquota.user` e `aquo
 
 ![](./caps/ls.PNG)
 
-
     Engade os módulos de quota ao kernel (se fose necesario)
-    Activa o sistema de cuotas
+
+## 4.3 Activa o sistema de cuotas
+
 
 # 5 Cuotas de usuario e de grupo
 
