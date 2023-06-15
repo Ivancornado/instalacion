@@ -264,3 +264,15 @@ Informacion sacada de:
 [kernel](https://askubuntu.com/questions/153023/what-is-the-linux-image-extra-package-for-and-do-i-need-it)
 [grupos](https://serverfault.com/questions/327606/what-exactly-is-a-group-quota-filesystem)
 
+# 1.0 Comprobación de cuotas 
+
+Creamos dous escenarios, no primero creamos un usuario (u1) e un grupo (g1) engadimos cuotas aos usuarios e grupos, intentaremos saturar o grupo engadindo este como apendice. No segundo escenario creamos un usuario (u2) e un grupo (g2) engadimos cuotas aos usuarios e grupos, substituimos o grupo principal.
+
+## 1.1 Primeiro escenario
+
+
+
+
+
+
+
