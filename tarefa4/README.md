@@ -270,9 +270,28 @@ Creamos dous escenarios, no primero creamos un usuario (u1) e un grupo (g1) enga
 
 ## 1.1 Primeiro escenario
 
+Creamos os usuarios e grupos con:
+
+```
+sudo adduser -nombre de usuario-
+```
+![](./caps/u1.PNG)
+
+e o grupo con
+
+```
+sudo creategroup nombre del grupo
+```
+
+Asignamos as cuotas ao usuario u1 usando
+```
+sudo edquota -vs nome do usuario
+```
 
 
-
+`0``
+sudo edquota -vsg nome do grupo
+```
 
 
 
