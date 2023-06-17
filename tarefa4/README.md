@@ -289,9 +289,12 @@ sudo edquota -vs nome do usuario
 ```
 
 
-`0``
+```
 sudo edquota -vsg nome do grupo
 ```
 
+ Unha vez establecidas as cuotas asignaremos o grupo g1 como apendice de u1
+
+ ![](./caps/apendice.PNG)
 
 
