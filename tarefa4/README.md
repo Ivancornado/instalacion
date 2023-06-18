@@ -275,7 +275,7 @@ Creamos dous escenarios, no primero creamos un usuario (u1) e un grupo (g1) enga
 ```
 sudo adduser nome de usuario
 ```
-![](./caps/u1.PNG)
+![](./caps/u1.png)
 
 e o grupo con
 
@@ -290,7 +290,7 @@ sudo edquota -vs nome do usuario
 -`-v` imprimir máis información.
 -`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
 
-![](./caps/quotau1.PNG)
+![](./caps/quotau1.png)
 
 ```
 sudo edquota -vsg nome do grupo
@@ -299,15 +299,15 @@ sudo edquota -vsg nome do grupo
 -`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
 -`-g` para que afecte a grupos
 
-![](./caps/quotag1.PNG)
+![](./caps/quotag1.png)
 
 ### 1.1.3 Unha vez establecidas as cuotas asignaremos o grupo g1 como apendice de u1
 
-![](./caps/apendice.PNG)
+![](./caps/apendice.png)
 
  Ahora iremos ocupando as cuotas para ver o resultado, para iso iniciamos sesión no usiario u1 e usando `dd` executamos a seguinte secuencia:
 
-![](./caps/55m1.PNG)
+![](./caps/55m1.png)
 
 De esta forma ocupamos 55 megabytes de memoria, ahora faremos un `exit` e co comando seguinte veremos como afectou ao usuario e grupo.
 
@@ -319,7 +319,7 @@ sudo quota -vsg nome do usuario ou grupo
 -`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
 -`-g` para que afecte a grupos
 
-![](./caps/55quoitas.PNG)
+![](./caps/55quoitas.png)
 
 ### 1.1.4 Conclusion do primeiro esceario
 
@@ -332,7 +332,7 @@ Ao engadir o grupo que creamos (g1) como apendice os arquivos creados non ocupan
 sudo adduser nome de usuario
 ```
 
-![](./caps/u2.PNG)
+![](./caps/u2.png)
 
 e o grupo con
 
@@ -347,7 +347,7 @@ sudo edquota -vs nome do usuario
 -`-v` imprimir máis información.
 -`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
 
-![](./caps/quotasu2.PNG)
+![](./caps/quotasu2.png)
 
 ```
 sudo edquota -vsg nome do grupo
@@ -356,37 +356,37 @@ sudo edquota -vsg nome do grupo
 -`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
 -`-g` para que afecte a grupos
 --------
-![](./caps/quotag2.PNG)
+![](./caps/quotag2.png)
 
 ###1.2.3 Unha vez establecidas as cuotas asignaremos o grupo g2 como grupo primario de u2
 
- ![](./caps/primario.PNG)
+ ![](./caps/primario.png)
 
 ###1.2.4 Ahora iremos ocupando as cuotas para ver o resultado, para iso iniciamos sesión no usiario u2 e usando `dd` executamos a seguinte secuencia:
 
  Primeiro creamos un arquivo de 55 megabytes de forma que excederemos a cuota soft de 50MB do grupo `g2`
 
-  ![](./caps/archivo55mescenario2.PNG)
+  ![](./caps/archivo55mescenario2.png)
 
  Como se pode ver na seguinte imaxe excedimos a cuota soft do grupo `g2` e ocupamos espacio tanto do grupo `g2` como do usuario `u2`
 
-  ![](./caps/quotas55Mescenario2ver.PNG)
+  ![](./caps/quotas55Mescenario2ver.png)
 
 A continuación crearemos un arquivo de 10MB excendendo así a cuota soft do usuario `u2`
 
-  ![](./caps/10Mescenario2.PNG)
+  ![](./caps/10Mescenario2.png)
 
 Como podemos ver neste caso excedese a cuota soft do usuario
 
-  ![](./caps/10Mescenario2ver.PNG)
+  ![](./caps/10Mescenario2ver.png)
 
 Por ultimo engadiremos 10MB os cales excederan a cuota soft do grupo `g2` e por tanto non permitirá que engadamos este ficheiro por completo
 
-![](./caps/ultimacuotaescenario2.PNG)
+![](./caps/ultimacuotaescenario2.png)
 
 Como se pode ver ocuposeuse a cuota hard do grupo ata o límite e a pesar de que o usuario ainda ten esapcio d ecuota dispoñible non podemos ocupala xa que o grupo é máis restrictivo.
 
-![](./caps/excedercuotagrupoescenario2.PNG)
+![](./caps/excedercuotagrupoescenario2.png)
 
 ### 1.2.5 Conclusion do segundo esceario
 
