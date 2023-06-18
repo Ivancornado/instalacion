@@ -270,10 +270,10 @@ Creamos dous escenarios, no primero creamos un usuario (u1) e un grupo (g1) enga
 
 ## 1.1 Primeiro esceario
 
-### 1.1.1 Creamos os usuarios e grupos con:
+## 1.1.1 Creamos os usuarios e grupos con:
 
 ```
-sudo adduser -nome de usuario-
+sudo adduser nome de usuario
 ```
 ![](./caps/u1.PNG)
 
