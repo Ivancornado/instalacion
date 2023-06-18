@@ -287,23 +287,23 @@ sudo creategroup nome do grupo
 ```
 sudo edquota -vs nome do usuario
 ```
-`-v` imprimir máis información.
-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
+-`-v` imprimir máis información.
+-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
 
 ![](./caps/quotau1.PNG)
 
 ```
 sudo edquota -vsg nome do grupo
 ```
-`-v` imprimir máis información.
-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
-`-g` para que afecte a grupos
+-`-v` imprimir máis información.
+-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
+-`-g` para que afecte a grupos
 
 ![](./caps/quotag1.PNG)
 
 ### 1.1.3 Unha vez establecidas as cuotas asignaremos o grupo g1 como apendice de u1
 
- ![](./caps/apendice.PNG)
+![](./caps/apendice.PNG)
 
  Ahora iremos ocupando as cuotas para ver o resultado, para iso iniciamos sesión no usiario u1 e usando `dd` executamos a seguinte secuencia:
 
@@ -315,11 +315,11 @@ De esta forma ocupamos 55 megabytes de memoria, ahora faremos un `exit` e co com
 sudo quota -vsg nome do usuario ou grupo
 ````  
 
-`-v` imprimir máis información.
-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
-`-g` para que afecte a grupos
+-`-v` imprimir máis información.
+-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
+-`-g` para que afecte a grupos
 
-  ![](./caps/55quoitas.PNG)
+![](./caps/55quoitas.PNG)
 
 ### 1.1.4 Conclusion do primeiro esceario
 
@@ -332,7 +332,7 @@ Ao engadir o grupo que creamos (g1) como apendice os arquivos creados non ocupan
 sudo adduser nome de usuario
 ```
 
-  ![](./caps/u2.PNG)
+![](./caps/u2.PNG)
 
 e o grupo con
 
@@ -344,17 +344,17 @@ sudo creategroup nome do grupo
 ```
 sudo edquota -vs nome do usuario
 ```
-`-v` imprimir máis información.
-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
+-`-v` imprimir máis información.
+-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
 
 ![](./caps/quotasu2.PNG)
 
 ```
 sudo edquota -vsg nome do grupo
 ```
-`-v` imprimir máis información.
-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
-`-g` para que afecte a grupos
+-`-v` imprimir máis información.
+-`-s` mostrar unidades en (MB, GB...) é decir de forma legible para os humanos.
+-`-g` para que afecte a grupos
 --------
 ![](./caps/quotag2.PNG)
 
